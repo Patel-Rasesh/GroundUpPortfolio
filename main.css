@@ -1,0 +1,99 @@
+body{
+    --color-background: white;
+    --border-radius: 10px;
+
+    margin: 0;
+
+    /* This height refers to the screen/window height.
+    For instance, in case of 200vh, we have scrollable window */
+    /* height: 100vh;
+
+    Removes the extra portion of the div from each side
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; */
+    background: var(--color-background)
+}
+
+.carousel{
+    position: relative;
+    height: 250px;
+    width: 40%;
+    top : 300px;
+    margin: 0 auto;
+}
+.horse{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__stage{
+    position: relative;
+    background: #1fdfff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+
+    /* Transition upon each transform */
+    transition: transform 250ms ease-in;
+}
+
+.carousel__horse{
+    position: absolute;
+    top: 0;
+    bottom : 0;
+    /* object-position: 20% 20%; */
+    /* bottom: 20%; */
+    width: 100%;
+    /* height: 70%; */
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+
+    /* With "top: 50%", top of the div block starts from the 50% of the parent block
+    We want the middle of the child to be at the 50% of the parent block */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel__button--next{
+    right: -50px;
+}
+
+.carousel__button--previous{
+    left: -75px;
+}
+
+.carousel__dots{
+    /* background: #1fffff; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__dot{
+    border: 0;
+    /* This makes them a circle  */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.carousel__dot.current-horse{
+    background-color: rgba(0,0,0,0.8);
+}

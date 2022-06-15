@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Carousel is open </title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--previous">Previous</button>
+      <div class="carousel__stage">
+        <ul class="carousel__track">
+          <li class="carousel__horse current-horse">
+            <img class="horse" src="Carousel-horses/ProjectA.png" alt="">
+          </li>
+          <li class="carousel__horse">
+            <img class="horse" src="Carousel-horses/ProjectB.png" alt="">
+          </li>
+          <li class="carousel__horse">
+            <img class="horse" src="Carousel-horses/ProjectC.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--next">Next</button>
+      <div class="carousel__dots">
+        <button class="carousel__dot current-horse"></button>
+        <button class="carousel__dot"></button>
+        <button class="carousel__dot"></button>
+      </div>
+    </div>
+    <script src="JavaScript/Carousel.js"></script>
+  </body>
+</html>
