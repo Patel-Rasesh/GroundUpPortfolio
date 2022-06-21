@@ -13,6 +13,9 @@
   </head>
   <body>
     
+    <!-- -----------------------------------------------------------------------------
+    Header content
+    ----------------------------------------------------------------------------- -->
     <section class="header">
       <div class="headerbar">
         <div class="headermenu">
@@ -53,49 +56,76 @@
       </div>
     </section>
 
-    <!-- Only carousel starts from here -->
+    <!-- -----------------------------------------------------------------------------
+    Home Container
+    ----------------------------------------------------------------------------- -->
+    <section class="home">
+      <div class="home-container">
+        <div class="text-details">
+          <h1 class="name">Rasesh P.</h1>
+          <h4 class="bio"> Tangible thinker. Inverse-engineering fan.</h4>
+          <p class="mission">"Willingness to solve the problem solves 
+            <br>half of the problem" ~ Paheli</p>
+        </div>
+        <img src="images/profile-picture" alt="" class="profile-picture">
+      </div>
+    </section>
     
-    <div class="carousel">
-      <button class="carousel__button carousel__button--previous">
-        <img src="Leftarrow.svg" class="LeftArrow" alt="">  
-      </button>
-      <div class="carousel__stage">
-        <ul class="carousel__track">
-          <li class="carousel__horse current-horse">
-            <!-- target makes sure that it opens in a new window -->
-            <a href="HTML/Projects/LaneDetection.html" target="_blank">
-              <img class="horse" src="images/ProjectA.png" alt="">
-            </a>
-          </li>
-          <li class="carousel__horse">
-            <img class="horse" src="images/ProjectB.png" alt="">
-          </li>
-          <li class="carousel__horse">
-            <img class="horse" src="images/ProjectC.png" alt="">
-          </li>
-          <li class="carousel__horse">
-            <img class="horse" src="images/ProjectD.png" alt="">
-          </li>
-          <li class="carousel__horse">
-            <img class="horse" src="images/ProjectE.png" alt="">
-          </li>
-          <li class="carousel__horse">
-            <img class="horse" src="images/ProjectF.png" alt="">
-          </li>
-        </ul>
+    <!-- -----------------------------------------------------------------------------
+    Projects Container
+    ----------------------------------------------------------------------------- -->
+    <section class="projects">
+      <div class="project-container">
+        <h1 class="project-header">Academic Projects</h1>
+        <div class="carousel">
+          <button class="carousel__button carousel__button--previous">
+            <img src="Leftarrow.svg" class="LeftArrow" alt="">  
+          </button>
+          <div class="carousel__stage">
+            <ul class="carousel__track">
+              <li class="carousel__horse current-horse">
+                <!-- target makes sure that it opens in a new window -->
+                <a href="HTML/Projects/LaneDetection.html" target="_blank">
+                  <img class="horse" src="images/Projects/Thumbnail - Spot-the-race-track (Normal).png" alt="">
+                </a>
+              </li>
+              <li class="carousel__horse">
+                <img class="horse" src="images/ProjectB.png" alt="">
+              </li>
+              <li class="carousel__horse">
+                <img class="horse" src="images/ProjectC.png" alt="">
+              </li>
+              <li class="carousel__horse">
+                <img class="horse" src="images/ProjectD.png" alt="">
+              </li>
+              <li class="carousel__horse">
+                <img class="horse" src="images/ProjectE.png" alt="">
+              </li>
+              <li class="carousel__horse">
+                <img class="horse" src="images/ProjectF.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--next">
+            <img src="Rightarrow.svg" class="RightArrow" alt="">
+          </button> 
+          <div class="carousel__dots">
+            <button class="carousel__dot current-horse"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+          </div>
+        </div>
       </div>
-      <button class="carousel__button carousel__button--next">
-        <img src="Rightarrow.svg" class="RightArrow" alt="">
-      </button> 
-      <div class="carousel__dots">
-        <button class="carousel__dot current-horse"></button>
-        <button class="carousel__dot"></button>
-        <button class="carousel__dot"></button>
-        <button class="carousel__dot"></button>
-        <button class="carousel__dot"></button>
-        <button class="carousel__dot"></button>
-      </div>
+    </section>
+    <div>
+      <span class="project project-thumbnail">
+        <!-- <p>Test image</p> -->
+      </span>
     </div>
     <script src="JavaScript/Carousel.js"></script>
+    
   </body>
 </html>
