@@ -2,27 +2,96 @@
 <html lang="en">
   <head>
     <title> Carousel is open </title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+
+    <style>
+      body{
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
   </head>
   <body>
+    
+    <section class="header">
+      <div class="headerbar">
+        <div class="headermenu">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#" class="home-link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="projects-link">Projects</a>
+              </li>
+              <li>
+                <a href="#" class="about-link">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/rasesh-patel97/" target="_blank">
+                  <img src="images/LinkedinGradient.svg" class="LinkedInGradient"/>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:raseshpatel9977@gmail.com">
+                  <img src="images/mail.svg" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/_rasesh/" target="_blank">
+                  <img src="images/instagram.svg" />
+                </a> 
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Only carousel starts from here -->
+    
     <div class="carousel">
-      <button class="carousel__button carousel__button--previous">Previous</button>
+      <button class="carousel__button carousel__button--previous">
+        <img src="Leftarrow.svg" class="LeftArrow" alt="">  
+      </button>
       <div class="carousel__stage">
         <ul class="carousel__track">
           <li class="carousel__horse current-horse">
-            <img class="horse" src="Carousel-horses/ProjectA.png" alt="">
+            <!-- target makes sure that it opens in a new window -->
+            <a href="HTML/Projects/LaneDetection.html" target="_blank">
+              <img class="horse" src="images/ProjectA.png" alt="">
+            </a>
           </li>
           <li class="carousel__horse">
-            <img class="horse" src="Carousel-horses/ProjectB.png" alt="">
+            <img class="horse" src="images/ProjectB.png" alt="">
           </li>
           <li class="carousel__horse">
-            <img class="horse" src="Carousel-horses/ProjectC.png" alt="">
+            <img class="horse" src="images/ProjectC.png" alt="">
+          </li>
+          <li class="carousel__horse">
+            <img class="horse" src="images/ProjectD.png" alt="">
+          </li>
+          <li class="carousel__horse">
+            <img class="horse" src="images/ProjectE.png" alt="">
+          </li>
+          <li class="carousel__horse">
+            <img class="horse" src="images/ProjectF.png" alt="">
           </li>
         </ul>
       </div>
-      <button class="carousel__button carousel__button--next">Next</button>
+      <button class="carousel__button carousel__button--next">
+        <img src="Rightarrow.svg" class="RightArrow" alt="">
+      </button> 
       <div class="carousel__dots">
         <button class="carousel__dot current-horse"></button>
+        <button class="carousel__dot"></button>
+        <button class="carousel__dot"></button>
+        <button class="carousel__dot"></button>
         <button class="carousel__dot"></button>
         <button class="carousel__dot"></button>
       </div>
