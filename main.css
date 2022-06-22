@@ -160,20 +160,6 @@ Project carousel
     background-image: url("images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png");
 } */
 
-.project{
-    display: inline-block;
-    width: 500px;
-    height:200px;
-    background-size: cover;
-}
-.project-thumbnail{
-    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png);    
-}
-.project-thumbnail:hover,
-.project-thumbnail:focus{
-    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png);
-}
-
 .project-container .project-header{
     margin-top: 50px;
     margin-left: 450px;
