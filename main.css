@@ -142,11 +142,10 @@ Home container
 .home-container img{
     margin-top: 20px;
     margin-left: 100px;
-    /* max-width: 100%;
-    max-height: 100%; */
     width: 140px;
     height: 140px;
-    /* object-fit: contain; */
+    border-radius: 100px;
+    object-fit: cover;
 }
 
 /* ----------------------------------------------------------------------------
@@ -160,6 +159,22 @@ Project carousel
     background-image: url("images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png");
 } */
 
+.project{
+    display: inline-block;
+    width: 540px;
+    height:200px;
+
+    /* This makes sure that image doesn't go beyond the screensize */
+    background-size: cover;
+}
+.project-thumbnail{
+    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png);    
+}
+.project-thumbnail:hover,
+.project-thumbnail:focus{
+    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png);
+}
+
 .project-container .project-header{
     margin-top: 50px;
     margin-left: 450px;
@@ -168,11 +183,12 @@ Project carousel
     font-size: 1.65rem;
 }
 .carousel{
-    position: relative;
+    margin-top: 20px;
+    margin-left: 480px;
     height: 200px;
     width: 35%;
     top : 50px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .horse{
     position: absolute;
@@ -189,6 +205,7 @@ Project carousel
     height: 100%;
     width: 100%;
     overflow: hidden;
+    border-radius: 23px;
 }
 
 .carousel__track{
@@ -215,7 +232,6 @@ Project carousel
 .carousel__button{
     position: absolute;
     top: 50%;
-
     /* With "top: 50%", top of the div block starts from the 50% of the parent block
     We want the middle of the child to be at the 50% of the parent block */
     transform: translateY(-50%);
@@ -226,11 +242,15 @@ Project carousel
 }
 
 .carousel__button .LeftArrow {
+    margin-left: 470px;
+    margin-top: 330px;
     width: 40px;
     height: 40px;
 }
 
 .carousel__button .RightArrow {
+    margin-right: 510px;
+    margin-top: 330px;
     width: 40px;
     height: 40px;
 }
