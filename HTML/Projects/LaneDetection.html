@@ -78,25 +78,25 @@
             <li>
                 Using inRange() : Fetch only the tarmac grey (Question: how about texture of the road?) from the image and pick our colored - red, yellow, and white lane lines.
                 
-                <image src="../../images/Projects/LaneDetection-1.png" poster"></image>
+                <image src="../../images/Projects/LaneDetection-1.png"></image>
                 But realistically, we can have a yellow vehicle in front of us too. Which pushes us to decide on ROI.
 
                 <p>What are the ways we can shrewdly mask out of Region of Interest?</p>
                 <li>
                     Considering only the half of the image (Literally splitting the image in half - horizontally). Maybe we can curve, and split the image elliptically, where the major axis of the ellipse if parallel to the dashboard of the car. But wait what happens to the images which are captured from the footover bridge?
                     
-                    <image src="../../images/Projects/LaneDetection-2.png" poster"></image>
+                    <image src="../../images/Projects/LaneDetection-2.png"></image>
                 </li>
                 
                 Could we detect, which image is taken from the dashcam and which from the bridge?
-                <image src="../../images/Projects/LaneDetection-3.png" poster"></image>
+                <image src="../../images/Projects/LaneDetection-3.png"></image>
                 <li>
                     Hypothetically, once we have extracted the 'road', could we use Perspective Transform to enlarge the narrow portions of the road, and pick our lane lines from that image?
                 </li>
             </li>
         </ol>
 
-        <image src="../../images/Projects/LaneDetection-4.png" poster"></image>
+        <image src="../../images/Projects/LaneDetection-4.png"></image>
 
         <div class="hough-transform">
             <p>This section talks about Hough transform. Theoretically.</p>

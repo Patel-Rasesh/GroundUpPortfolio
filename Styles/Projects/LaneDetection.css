@@ -1,0 +1,135 @@
+/* -------------------------------------------------------------------------------------------
+For entire body
+------------------------------------------------------------------------------------------- */
+
+body{
+    --color-background: #FAF9F6;
+    /* display: inline-block; */
+    
+    width: 45%;
+    margin: 0 auto;
+    font-size: 18px;
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+}
+body img{
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+}
+
+body .poster--caption{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    /* Remove underlines */
+    text-decoration: none; 
+  }
+/* -------------------------------------------------------------------------------------------
+class - header
+------------------------------------------------------------------------------------------- */
+.header{
+    /* TODO- Remove top margin once we have the menu bar in-place */
+    margin-top: 20px;
+}
+
+.header h1{
+    font-size: 3rem;
+}
+
+.header .sub-header{
+    display: flex;
+}
+.header .sub-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.header .name,
+.header .duration{
+    margin-left: 5px;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+.header .duration{
+    float: right;
+    margin-left: 56%;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - abstract
+------------------------------------------------------------------------------------------- */
+.abstract,
+.table-of-content,
+.setting-the-perimeter,
+.initial-thoughts,
+.prefered-pipeline{
+    text-align: justify;
+    color: #464E51;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - table-of-content
+------------------------------------------------------------------------------------------- */
+
+.table-of-content h1{
+    color: black;
+    font-size: 1.7rem;
+}
+.table-of-content li{
+    line-height: 1.6;
+    padding: 6px 6px 6px 6px;
+    transition: transform .2s;
+    border-bottom: 0.5px solid rgba(70, 78, 81, 0.15);
+}
+
+.table-of-content li:hover{
+    transform: scale(1.008);
+}
+
+/* -------------------------------------------------------------------------------------------
+class - setting-the-perimeter
+------------------------------------------------------------------------------------------- */
+
+.setting-the-perimeter{
+    text-align: left;
+    line-height: 1.6;
+}
+.setting-the-perimeter h1{
+    color: black;
+    font-size: 1.7rem;
+}
+.setting-the-perimeter p{
+    line-height: 1.6;
+    font-style: italic;
+    background-color: white;
+    border: 2px solid white;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - initial-thoughts
+------------------------------------------------------------------------------------------- */
+.initial-thoughts h1{
+    color: black;
+    font-size: 1.7rem;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - prefered-pipeline
+------------------------------------------------------------------------------------------- */
+.prefered-pipeline h1{
+    color: black;
+    font-size: 1.7rem;
+}
