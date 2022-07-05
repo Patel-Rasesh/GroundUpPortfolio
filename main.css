@@ -153,25 +153,19 @@ Home container
 Project carousel
 ---------------------------------------------------------------------------- */
 
-/* .project-container .carousel__horse:hover,
-.project-container .carousel__horse:focus{
-    opacity: 0.5;
-    transition: opacity 0.5s;
-    background-image: url("images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png");
-} */
-
-.project{
+.projects{
     display: inline-block;
-    width: 540px;
-    height:200px;
+    width: 100%;
+    /* height:200px; */
 
     /* This makes sure that image doesn't go beyond the screensize */
     background-size: cover;
 }
-.project-thumbnail{
+.each-project .project-thumbnail{
     transition: 0.7s;
-    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png);    
+    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png);
 }
+
 .project-thumbnail:hover,
 .project-thumbnail:focus{
     transition: 0.7s;
@@ -195,6 +189,7 @@ Project carousel
     margin: 0 auto;
 }
 .horse{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -215,7 +210,7 @@ Project carousel
     padding: 0;
     margin: 0;
     list-style: none;
-    position: absolute;
+    position: relative;
     height: 100%;
     /* display: flex; */
     /* Transition upon each transform */

@@ -1,0 +1,157 @@
+/* -------------------------------------------------------------------------------------------
+For entire body
+------------------------------------------------------------------------------------------- */
+body{
+    --color-background: #FAF9F6;
+    /* display: inline-block; */
+    
+    width: 45%;
+    margin: 0 auto;
+    font-size: 18px;
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+}
+body img{
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------------------------
+For menubar
+------------------------------------------------------------------------------------------- */
+
+/* TODO - Update this */
+
+
+/* -------------------------------------------------------------------------------------------
+Carousel
+------------------------------------------------------------------------------------------- */
+.about{
+    display: inline-block;
+    width: 100%;
+
+    /* This makes sure that image doesn't go beyond the screensize */
+    background-size: cover;
+}
+
+.about .about-cooking{
+    transition: 0.7s;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/ProjectA.png);    
+}
+
+.about-cooking:hover,
+.about-cooking:focus{
+    width: 100%;
+    height: 150px;
+    transition: 0.7s;
+    background-image: url(../images/ProjectB.png);    
+}
+
+.about-container .about-header{
+    font-size: 1.65rem;
+}
+
+.carousel{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    
+    /* Left and right margin are set to auto (sit centrally of the parent div)
+    Top and bottom margin are set to 0 */
+    margin: 0 auto;
+}
+.horse{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel__stage{
+    position: relative;
+    background: #1fdfff;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 10px;
+    margin-bottom: 10px;
+    border-radius: 23px;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* position: absolute; */
+    position: relative;
+    height: 100%;
+    /* display: flex; */
+    /* Transition upon each transform */
+    transition: transform 290ms ease-in;
+}
+
+.carousel__horse{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    /* display: flex; */
+    top: 50%;
+    /* With "top: 50%", top of the div block starts from the 50% of the parent block
+    We want the middle of the child to be at the 50% of the parent block */
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    /* background-color: black; */
+}
+
+.carousel__button .LeftArrow {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel__button .RightArrow {
+    width: 40px;
+    height: 40px;   
+}
+
+.carousel__button--next{
+    right: -60px;
+}
+
+.carousel__button--previous{
+    left: -60px;
+}
+
+.carousel__dots{
+    /* background: #1fffff; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__dot{
+    border: 0;
+    /* This makes them a circle  */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.carousel__dot.current-horse{
+    background-color: rgba(0,0,0,0.8);
+}

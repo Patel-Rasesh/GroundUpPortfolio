@@ -126,10 +126,22 @@ class - initial-thoughts
     font-size: 1.7rem;
 }
 
+.initial-thoughts .initial-questions{
+    color: black;
+    font-weight: bold;
+}
 /* -------------------------------------------------------------------------------------------
 class - prefered-pipeline
 ------------------------------------------------------------------------------------------- */
 .prefered-pipeline h1{
+    color: black;
+    font-size: 1.7rem;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - conclusions
+------------------------------------------------------------------------------------------- */
+.conclusions h1{
     color: black;
     font-size: 1.7rem;
 }

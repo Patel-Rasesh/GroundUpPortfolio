@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="header">
-        <h1>Extrapolating Hues couldn't violate more rules</h1>
+        <h1>Extrapolating Hues couldn't violate more traffic rules</h1>
         <div class="sub-header">
             <image src="../../images/Profile-picture-Colored.jpg"></image>
             <div class="name">
@@ -22,10 +22,10 @@
         <!-- This image can meet all the challenges -->
         <image src='../../images/Projects/LaneDetection-poster.jpg' class="poster" alt="Vignette of the project"></image>
         <div class="poster--caption">
-            <p>Image Credit goes here</p>
+            <p>Image credit : Google Images</p>
         </div>
-        <p>The expectation of this assignment was pretty straight foreward (only figuratively). We were asked to outline lane lines. On the roads. From the sample photographs. Taken from a dashboard of the camera of a vehicle. And from the walk-over bridges.</p>
-        <p>We will quietly step away from using any libraries or pre-built tool here; only taking help from OpenCV and image processing operations.</p>
+        <p>The expectation of this assignment was pretty straight foreward (only figuratively). The objective was to outline lane lines from the sample photographs - taken from a dashboard of the camera of a vehicle, and from the walk-over bridges.</p>
+        <p>Quietly stepping away from using any libraries or pre-built tool for this task was implictly conveyed; only OpenCV and image processing operations were allowed.</p>
     </div>
     <div class="table-of-content">
         <h1>Table of Content</h1>
@@ -40,14 +40,14 @@
                 <a href="#3">Prefered Pipeline</a>
             </li>
             <li>
-                <a href="#4">Jumping to Conclusions</a>
+                <a href="#4">Finishing to Conclusions</a>
             </li>
         </ol>
     </div>
     <div class="setting-the-perimeter" id="1">
         <h1>Setting the Perimeter</h1>
         <p>"A problem well stated is a problem half solved"<br> John Dewey</p>
-        Although the task-at-hand is easy to understand, this simplicity ensues number of possible approaches. And if the question is not well understood, that might lead to fundamental changes in the solution and consequently to time and effort. Consider the following To Dos - 
+        Although the task-at-hand is easy to understand, this simplicity ensues number of possible approaches. And if the question is not well understood, that might lead to fundamental changes in the solution and consequently to additional time and effort. Let us, consider the following To Dos - 
         <ul>
             <li>
                 The lane can be straight or curved, and white, yellow, or red.
@@ -65,32 +65,36 @@
                 Detection should not take more than a minute.
             </li>
         </ul>
-        An exemplary sample image, in terms of above challenges, would be this - 
+        An exemplary sample image, inclusive of above challenges, would be this - 
         <image src="../../images/Projects/LaneDetection-bosslevel.jpeg" class="lane-bosslevel"></image>
-        <div class="poster--caption">
-            <p>Image Credit goes here</p>
-        </div>
     </div>
     <div class="initial-thoughts" id="2">
         <h1>Initial thoughts ... and their shortcomings</h1>
         As a Computer Vision connoisseur, you would have quickly fetched your set of ingredients. Here are a few I think are suitable for the job.
         <ol>
             <li>
-                Using inRange() : Fetch only the tarmac grey (Question: how about texture of the road?) from the image and pick our colored - red, yellow, and white lane lines.
+                <div class="initial-questions">
+                    Using inRange() : 
+                </div>
+                Fetch only the tarmac grey (Question: how about texture of the road?) from the image and pick the colored - red, yellow, and white lane lines.
                 
                 <image src="../../images/Projects/LaneDetection-1.png"></image>
                 But realistically, we can have a yellow vehicle in front of us too. Which pushes us to decide on ROI.
 
-                <p>What are the ways we can shrewdly mask out of Region of Interest?</p>
                 <li>
-                    Considering only the half of the image (Literally splitting the image in half - horizontally). Maybe we can curve, and split the image elliptically, where the major axis of the ellipse if parallel to the dashboard of the car. But wait what happens to the images which are captured from the footover bridge?
+                    <div class="initial-questions">
+                        <p>What are the ways we can shrewdly mask out of Region of Interest?</p>
+                    </div>
+                    Considering only the half of the image (Literally horizontally splitting the image in half). Maybe we can curve, and split the image elliptically, where the major axis of the ellipse if parallel to the dashboard of the car. But wait what happens to the images which are captured from the footover bridge?
                     
                     <image src="../../images/Projects/LaneDetection-2.png"></image>
                 </li>
                 
-                Could we detect, which image is taken from the dashcam and which from the bridge?
-                <image src="../../images/Projects/LaneDetection-3.png"></image>
                 <li>
+                    <div class="initial-questions">
+                        Could we detect, which image is taken from the dashcam and which from the bridge?
+                    </div>
+                    <image src="../../images/Projects/LaneDetection-3.png"></image>
                     Hypothetically, once we have extracted the 'road', could we use Perspective Transform to enlarge the narrow portions of the road, and pick our lane lines from that image?
                 </li>
             </li>
@@ -99,12 +103,16 @@
         <image src="../../images/Projects/LaneDetection-4.png"></image>
 
         <div class="hough-transform">
-            <p>This section talks about Hough transform. Theoretically.</p>
+            <div class="initial-questions">
+                <p>This section talks about Hough transform. Theoretically.</p>
+            </div>
             Hough Transform essentially checks whether enough intersections between regions of two surfaces to be a line or not.
             There is an Accumulator Matrix, number of points (coordinates) are given, and range of values for A and B are given within which you need to perform Hough Transform.
             <p>About Hough and HoughP</p>
 
-            <p>Required slope correction and horizontal signs on the road</p>
+            <div class="initial-questions">
+                <p>Required slope correction and horizontal signs on the road</p>
+            </div>
             <!-- TODO - Consider inputting the image with horizontal white lines -->
             To avoid detecting horizontal lines, which are not lane lines but they are white, and on the road. They are essentially conveying helpful symbols for drivers but they are also confusing our code. And our code ends up detecting them as lane lines. Computing the slop of a line - degree to which it qualifies as a either a horizonal or a vertical line, helps us in overcoming this problem.
         </div>
@@ -114,9 +122,12 @@
         Step-wise show functions from your code
         <image src="../../images/Projects/LaneDetection-code-1.png""></image>
     </div>
+    <div class="conclusions" id="4">
+        <h1>To be framed<br></h1>
+    </div>
 
-    <!-- 
-1. Include snippet of source code
-2. Since your code wasn't completed, show your images in challenges -->
+<!--
+2. Since your code wasn't completed, show your images in challenges 
+-->
   </body>
 </html>

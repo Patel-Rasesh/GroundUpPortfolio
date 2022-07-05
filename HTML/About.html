@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> About Section </title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/About.css">
+  </head>
+  <body>
+    <!-- -----------------------------------------------------------------------------
+    TODO - Menu bar - Header content
+    ----------------------------------------------------------------------------- -->
+
+    <!-- Test print
+    
+    1. 30 mins to draft About section
+    2. 30 mins to figure out "Leetcode 3 days ago" - Commit to Leetcode Repo on GitHub
+
+    0. Exclude jogging from this section 
+    a. Cooking (If you are going to do this atleast twice a day for literally rest of your life, better try to learn to make fine cuisine) (photos - plenty)
+    b. Board games - Chess, Catan, Poker (personality traits) (photos - enough)
+    c. Swimming (photos plenty - include rivers, falls, oceans) and badminton (photos Not many) -->
+
+    <!-- Importing Carousel starts from here -->
+    <section class="about">
+        <div class="about-container">
+          <h1 class="about-header">Mindful Hangouts</h1>
+          <div class="carousel">
+            <button class="carousel__button carousel__button--previous">
+              <img src="../images/LeftArrow.svg" class="LeftArrow" alt="">  
+            </button>
+            <div class="carousel__stage">
+              <ul class="carousel__track">
+                <li class="carousel__horse current-horse">
+                  <a href="../HTML/Projects/LaneDetection.html" target="_blank">
+                    <div class="about-cooking">
+                      <!-- Dummy -->
+                    </div>
+                  </a>
+                </li>
+                </li>
+                <li class="carousel__horse">
+                    <img class="horse" src="../images/ProjectB.png" alt="">
+                </li>
+                <li class="carousel__horse">
+                    <img class="horse" src="../images/ProjectC.png" alt="">
+                </li>
+                <li class="carousel__horse">
+                    <img class="horse" src="../images/ProjectD.png" alt="">
+                </li>
+                <li class="carousel__horse">
+                    <img class="horse" src="../images/ProjectE.png" alt="">
+                </li>
+                <li class="carousel__horse">
+                    <img class="horse" src="../images/ProjectF.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <button class="carousel__button carousel__button--next">
+              <img src="../images/RightArrow.svg" class="RightArrow" alt="">
+            </button> 
+            <div class="carousel__dots">
+              <button class="carousel__dot current-horse"></button>
+              <button class="carousel__dot"></button>
+              <button class="carousel__dot"></button>
+              <button class="carousel__dot"></button>
+              <button class="carousel__dot"></button>
+              <button class="carousel__dot"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="../JavaScript/Carousel.js"></script>
+    </body>
+</html>
