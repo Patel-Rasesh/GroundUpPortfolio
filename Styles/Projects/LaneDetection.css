@@ -46,6 +46,10 @@ class - header
 
 .header .sub-header{
     display: flex;
+    /* Align items keeps everything in the middle on y-axis
+    Justify-content keeps everything in the middle on x-axis */
+    align-items: center;
+    justify-content: center;
 }
 .header .sub-header img{
     width: 40px;

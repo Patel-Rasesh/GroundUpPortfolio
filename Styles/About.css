@@ -34,24 +34,48 @@ Carousel
 .about{
     display: inline-block;
     width: 100%;
-
     /* This makes sure that image doesn't go beyond the screensize */
-    background-size: cover;
 }
 
-.about .about-cooking{
+.about .about-button{
     transition: 0.7s;
+    cursor: pointer;
+    border: none;
     width: 100%;
     height: 150px;
-    background-image: url(../images/ProjectA.png);    
+    border-radius: 23px;
+    background-image: #afaaaa;
 }
 
-.about-cooking:hover,
-.about-cooking:focus{
+.carousel__stage .about-button img{
+    margin: auto 0;
+    object-fit: cover;
+    border-radius: 23px;
+    /* opacity: 0.7; */
+}
+
+/* TODO - Left component can be parent */
+.carousel__stage .about-button-expanded img{
+    transition: 0.7s;
+    margin: auto 0;
+    margin-top: -360px;
+    object-fit: contain;
+    border-radius: 13px;
+    /* opacity: 0.7; */
+}
+
+/* .about-button:hover,
+.about-button:focus{
     width: 100%;
     height: 150px;
     transition: 0.7s;
     background-image: url(../images/ProjectB.png);    
+} */
+
+.about-button-expanded{
+    transition: 0.8s;
+    display: none;
+    overflow: hidden;
 }
 
 .about-container .about-header{
@@ -60,7 +84,9 @@ Carousel
 
 .carousel{
     position: relative;
-    height: 150px;
+    transition: 0.7s;
+    /* TODO - Put a relative height */
+    height: 107px;
     width: 100%;
     
     /* Left and right margin are set to auto (sit centrally of the parent div)
@@ -75,8 +101,8 @@ Carousel
 
 .carousel__stage{
     position: relative;
-    background: #1fdfff;
-    height: 100%;
+    background: #ffffff;
+    height: 140%;
     width: 100%;
     overflow: hidden;
     top: 10px;
@@ -92,6 +118,7 @@ Carousel
     position: relative;
     height: 100%;
     /* display: flex; */
+    border-radius: 23px;
     /* Transition upon each transform */
     transition: transform 290ms ease-in;
 }
@@ -106,10 +133,12 @@ Carousel
 .carousel__button{
     position: absolute;
     /* display: flex; */
-    top: 50%;
+    /* TODO - Put a relative top */
+    top: 40px;
     /* With "top: 50%", top of the div block starts from the 50% of the parent block
     We want the middle of the child to be at the 50% of the parent block */
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
+
     cursor: pointer;
     background: transparent;
     border: 0;

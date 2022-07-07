@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      body{
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
     <title> About Section </title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/About.css">
@@ -24,52 +29,70 @@
     <section class="about">
         <div class="about-container">
           <h1 class="about-header">Mindful Hangouts</h1>
-          <div class="carousel">
+          <div class="carousel__dots">
+            <button class="carousel__dot current-horse"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+          </div>
+          <div class="carousel" id="ID-carousel">
             <button class="carousel__button carousel__button--previous">
               <img src="../images/LeftArrow.svg" class="LeftArrow" alt="">  
             </button>
             <div class="carousel__stage">
               <ul class="carousel__track">
                 <li class="carousel__horse current-horse">
-                  <a href="../HTML/Projects/LaneDetection.html" target="_blank">
-                    <div class="about-cooking">
-                      <!-- Dummy -->
-                    </div>
-                  </a>
+                  <button type="button" class="about-button" id="ID-about-button">
+                    <image src="../images/About/Water.jpeg" class="about-image"></image>
+                  </button>
+                  <div class="about-button-expanded">
+                    <image src="../images/About/Water.jpeg"></image>
+                  </div>
                 </li>
                 </li>
                 <li class="carousel__horse">
-                    <img class="horse" src="../images/ProjectB.png" alt="">
+                  <button type="button" class="about-button"></button>
+                  <div class="about-button-expanded">
+                    <p>Test Message2</p>
+                  </div>
                 </li>
                 <li class="carousel__horse">
-                    <img class="horse" src="../images/ProjectC.png" alt="">
+                  <button type="button" class="about-button"></button>
+                  <div class="about-button-expanded">
+                    <p>Test Message3</p>
+                  </div>
                 </li>
                 <li class="carousel__horse">
-                    <img class="horse" src="../images/ProjectD.png" alt="">
+                  <button type="button" class="about-button"></button>
+                  <div class="about-button-expanded">
+                    <p>Test Message4</p>
+                  </div>
                 </li>
                 <li class="carousel__horse">
-                    <img class="horse" src="../images/ProjectE.png" alt="">
+                  <button type="button" class="about-button"></button>
+                  <div class="about-button-expanded">
+                    <p>Test Message5</p>
+                  </div>
                 </li>
                 <li class="carousel__horse">
-                    <img class="horse" src="../images/ProjectF.png" alt="">
+                  <button type="button" class="about-button"></button>
+                  <div class="about-button-expanded">
+                    <p>Test Message6</p>
+                  </div>
                 </li>
               </ul>
             </div>
             <button class="carousel__button carousel__button--next">
               <img src="../images/RightArrow.svg" class="RightArrow" alt="">
             </button> 
-            <div class="carousel__dots">
-              <button class="carousel__dot current-horse"></button>
-              <button class="carousel__dot"></button>
-              <button class="carousel__dot"></button>
-              <button class="carousel__dot"></button>
-              <button class="carousel__dot"></button>
-              <button class="carousel__dot"></button>
-            </div>
           </div>
         </div>
       </section>
 
+      <script src="../JavaScript/About-expand.js"></script>
       <script src="../JavaScript/Carousel.js"></script>
+      <script src="../JavaScript/About-title.js"></script>
     </body>
 </html>
