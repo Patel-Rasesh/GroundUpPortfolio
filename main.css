@@ -218,7 +218,12 @@ Project carousel
 }
 
 .carousel__horse{
-    position: absolute;
+    /* position: absolute; */
+    
+    /* changes for photo container */
+    position: relative;
+    display: flex;
+
     top: 0px;
     bottom: 0px;
     width: 100%;

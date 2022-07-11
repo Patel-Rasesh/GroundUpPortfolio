@@ -9,21 +9,21 @@
     <title> About Section </title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/About.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!-- -----------------------------------------------------------------------------
     TODO - Menu bar - Header content
     ----------------------------------------------------------------------------- -->
 
-    <!-- Test print
-    
-    1. 30 mins to draft About section
-    2. 30 mins to figure out "Leetcode 3 days ago" - Commit to Leetcode Repo on GitHub
-
+    <!--
     0. Exclude jogging from this section 
     a. Cooking (If you are going to do this atleast twice a day for literally rest of your life, better try to learn to make fine cuisine) (photos - plenty)
-    b. Board games - Chess, Catan, Poker (personality traits) (photos - enough)
-    c. Swimming (photos plenty - include rivers, falls, oceans) and badminton (photos Not many) -->
+    b. Water 
+    c. Badminton (photos Not many) 
+    d. Board games - Chess, Catan, Poker (personality traits)
+        Descritpion - 
+    -->
 
     <!-- Importing Carousel starts from here -->
     <section class="about">
@@ -45,33 +45,53 @@
               <ul class="carousel__track">
                 <li class="carousel__horse current-horse">
                   <button type="button" class="about-button" id="ID-about-button">
-                    <image src="../images/About/Water.jpeg" class="about-image"></image>
+                    <h1>Water</h1>
                   </button>
                   <div class="about-button-expanded">
-                    <image src="../images/About/Water.jpeg"></image>
+                     <image src="../images/About/Water-1.jpeg"></image>
+                     <div class="caption">
+                      <p>A kid from a coastal town</p>
+                     </div>
                   </div>
                 </li>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button"></button>
+                  <button type="button" class="about-button" id="ID-about-button">
+                    <h1>Food</h1>
+                  </button>
                   <div class="about-button-expanded">
-                    <p>Test Message2</p>
+                    <image src="../images/About/Food-1.jpeg"></image>
+                     <div class="caption">
+                      <p>Tastes Good to Gourmet</p>
+                     </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button"></button>
+                  <button type="button" class="about-button" id="ID-about-button">
+                    <h1>Feather</h1>
+                  </button>
                   <div class="about-button-expanded">
-                    <p>Test Message3</p>
+                    <image src="../images/About/Sweat-1.jpeg"></image>
+                     <div class="caption">
+                      <p>Reflexes couldn't get better</p>
+                     </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button"></button>
+                  <button type="button" class="about-button" id="ID-about-button">
+                    <h1>Ideas</h1>
+                  </button>
                   <div class="about-button-expanded">
-                    <p>Test Message4</p>
+                    <image src="../images/About/Brain-1.jpeg"></image>
+                     <div class="caption">
+                      <p>Openings are way more dynamic</p>
+                     </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button"></button>
+                  <button type="button" class="about-button" id="ID-about-button">
+                    <h1>Placeholder</h1>
+                  </button>
                   <div class="about-button-expanded">
                     <p>Test Message5</p>
                   </div>
@@ -93,6 +113,15 @@
 
       <script src="../JavaScript/About-expand.js"></script>
       <script src="../JavaScript/Carousel.js"></script>
-      <script src="../JavaScript/About-title.js"></script>
+      <!-- <script src="../JavaScript/About-title.js"></script> -->
+      <script>
+        ScrollReveal({ 
+          reset: true,
+          distance: '20px',
+          duration: 900,
+          delay: 100
+         });
+         ScrollReveal().reveal('.about-header', { delay: 200 });
+      </script>
     </body>
 </html>

@@ -37,6 +37,10 @@ nextButton.addEventListener('click', event=>{
     const currentDot = dotsArray.querySelector('.current-horse');
     const nextDot = currentDot.nextElementSibling;
     moveDots(currentDot, nextDot);
+
+    // Shrinking the Carousel main body
+    var parentElement = document.getElementById("ID-carousel");
+    parentElement.style.height = "107px";
 })
 // 2. Click Previous for image on the left
 previousButton.addEventListener('click', event => {
@@ -46,6 +50,9 @@ previousButton.addEventListener('click', event => {
     const currentDot = dotsArray.querySelector('.current-horse');
     const previousDot = currentDot.previousElementSibling;
     moveDots(currentDot, previousDot);
+    
+    var parentElement = document.getElementById("ID-carousel");
+    parentElement.style.height = "107px";
 })
 
 // 3. Go to the respective image when clicked on any dot

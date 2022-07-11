@@ -31,32 +31,9 @@ For menubar
 /* -------------------------------------------------------------------------------------------
 Carousel
 ------------------------------------------------------------------------------------------- */
-.about{
-    display: inline-block;
-    width: 100%;
-    /* This makes sure that image doesn't go beyond the screensize */
-}
-
-.about .about-button{
-    transition: 0.7s;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    height: 150px;
-    border-radius: 23px;
-    background-image: #afaaaa;
-}
-
-.carousel__stage .about-button img{
-    margin: auto 0;
-    object-fit: cover;
-    border-radius: 23px;
-    /* opacity: 0.7; */
-}
-
 /* TODO - Left component can be parent */
 .carousel__stage .about-button-expanded img{
-    transition: 0.7s;
+    transition: ease-in-out;
     margin: auto 0;
     margin-top: -360px;
     object-fit: contain;
@@ -71,16 +48,6 @@ Carousel
     transition: 0.7s;
     background-image: url(../images/ProjectB.png);    
 } */
-
-.about-button-expanded{
-    transition: 0.8s;
-    display: none;
-    overflow: hidden;
-}
-
-.about-container .about-header{
-    font-size: 1.65rem;
-}
 
 .carousel{
     position: relative;
@@ -148,11 +115,13 @@ Carousel
 .carousel__button .LeftArrow {
     width: 40px;
     height: 40px;
+    opacity: 0.4;
 }
 
 .carousel__button .RightArrow {
     width: 40px;
-    height: 40px;   
+    height: 40px;
+    opacity: 0.4;   
 }
 
 .carousel__button--next{
@@ -183,4 +152,55 @@ Carousel
 
 .carousel__dot.current-horse{
     background-color: rgba(0,0,0,0.8);
+}
+
+/* -------------------------------------------------------------------------------------------
+About Photo Container
+------------------------------------------------------------------------------------------- */
+
+.about{
+    /* display: block; */
+    width: 100%;
+    /* This makes sure that image doesn't go beyond the screensize */
+}
+
+.about .about-button{
+    transition: ease-in-out;
+    cursor: pointer;
+    border: none;
+    border-color: #afffff;
+    width: 100%;
+    height: 150px;
+    border-radius: 23px;
+    display: block;
+    position: relative;
+    background-color: #afffff;
+}
+
+.about .about-button h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.about-container .about-header{
+    font-size: 1.65rem;
+}
+
+.about .about-button-expanded{
+    /* transition: 0.8s; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .about-button-expanded img{
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
