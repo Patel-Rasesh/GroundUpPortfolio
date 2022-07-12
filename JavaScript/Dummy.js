@@ -9,27 +9,14 @@ console.log(image);
 button.addEventListener("click", function(){
     if (image.style.display == "block"){
         image.style.display = "none";
+        button.style.height = "200px";
+        button.style.transition = "0.8s";
+        button.style.backgroundColor = "orange";
     }
     else{
         image.style.display = "block";
+        button.style.height = "50px";
+        button.style.transition = "0.8s";
+        button.style.backgroundColor = "yellow";
     }
 });
-
-// var index;
-// for(index = 0; index<aboutButton.length; index++){
-//     aboutButton[index].addEventListener("click", function(){
-//         this.classList.toggle("active");
-//         var aboutButtonExpanded = this.nextElementSibling;
-//         // console.log(aboutButtonExpanded);
-//         parentElement = document.getElementById("ID-carousel");
-//         // console.log(parentElement);
-//         if (aboutButtonExpanded.style.display == "block"){
-//             aboutButtonExpanded.style.display = "none";
-//             // TODO - Put a relative height
-//             parentElement.style.height = "107px";
-//         }else{
-//             aboutButtonExpanded.style.display = "block";
-//             parentElement.style.height = "400px";
-//         }
-//     });
-// }

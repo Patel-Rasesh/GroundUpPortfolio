@@ -37,7 +37,7 @@ Carousel
     margin: auto 0;
     margin-top: -360px;
     object-fit: contain;
-    border-radius: 13px;
+    border-radius: 5px;
     /* opacity: 0.7; */
 }
 
@@ -74,7 +74,8 @@ Carousel
     overflow: hidden;
     top: 10px;
     margin-bottom: 10px;
-    border-radius: 23px;
+    border: none;
+    /* border-radius: 5px; */
 }
 
 .carousel__track{
@@ -84,7 +85,7 @@ Carousel
     /* position: absolute; */
     position: relative;
     height: 100%;
-    border-radius: 23px;
+    border: none;
     /* Transition upon each transform */
     transition: transform 290ms ease-in;
 }
@@ -163,20 +164,28 @@ About Photo Container
     /* This makes sure that image doesn't go beyond the screensize */
 }
 
-.about .about-button{
+.about-button{
     transition: ease-in-out;
     cursor: pointer;
     border: none;
-    border-color: #afffff;
+    background-color: transparent;
     width: 100%;
-    height: 150px;
-    border-radius: 23px;
+    /* display: block; */
+    /* position: relative; */
+}
+
+.about-button-class{
+    transition: ease-in-out;
+    cursor: pointer;
+    border: none;
+    width: 100%;
     display: block;
     position: relative;
     background-color: #afffff;
 }
 
 .about .about-button h1{
+    transition: ease-in-out;
     font-size: 3rem;
     color: white;
 }
@@ -201,24 +210,29 @@ About Photo Container
 
 .about-image-class img{
     z-index: 111;
-    top: 35%;
+    top: 30%;
     transition: 0.8s;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
 }
 
 .caption{
     z-index: 222;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blue(20px);
-    max-width: 200px;
+    border: 1px solid rgba(207, 185, 151, 0.3);
+    background-color: rgba(207, 185, 151, 0.3);
+    backdrop-filter: blue(40px);
+    max-width: 80%;
+    text-align: center;
     max-height: 200px;
+    margin: 0 auto;
+    padding: 20px;
     color:black;
-    position: relative;
-    transform: translate(-80px, 250px);
+    line-height: 1.3;
+    position: absolute;
+
+    transform: translate(15%, 300px);
 
 }
