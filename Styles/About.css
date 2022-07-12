@@ -53,7 +53,7 @@ Carousel
     position: relative;
     transition: 0.7s;
     /* TODO - Put a relative height */
-    height: 107px;
+    height: 500px;
     width: 100%;
     
     /* Left and right margin are set to auto (sit centrally of the parent div)
@@ -68,7 +68,7 @@ Carousel
 
 .carousel__stage{
     position: relative;
-    background: #ffffff;
+    background: -var(--color-background);
     height: 140%;
     width: 100%;
     overflow: hidden;
@@ -84,7 +84,6 @@ Carousel
     /* position: absolute; */
     position: relative;
     height: 100%;
-    /* display: flex; */
     border-radius: 23px;
     /* Transition upon each transform */
     transition: transform 290ms ease-in;
@@ -186,21 +185,40 @@ About Photo Container
     font-size: 1.65rem;
 }
 
-.about .about-button-expanded{
-    /* transition: 0.8s; */
-    display: block;
+.about-button-expanded{
+    display: none;
+    transition: 1s ease-out;
+}
+
+.about-image-class{
     justify-content: center;
     align-items: center;
+    width:  1024px;
+    height: 768px;
     position: relative;
     overflow: hidden;
 }
 
-.about .about-button-expanded img{
-    position: relative;
-    display: block;
-    top: 0;
+.about-image-class img{
+    z-index: 111;
+    top: 35%;
+    transition: 0.8s;
+    position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.caption{
+    z-index: 222;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blue(20px);
+    max-width: 200px;
+    max-height: 200px;
+    color:black;
+    position: relative;
+    transform: translate(-80px, 250px);
+
 }

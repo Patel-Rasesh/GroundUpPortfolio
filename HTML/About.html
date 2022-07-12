@@ -15,16 +15,7 @@
     <!-- -----------------------------------------------------------------------------
     TODO - Menu bar - Header content
     ----------------------------------------------------------------------------- -->
-
-    <!--
-    0. Exclude jogging from this section 
-    a. Cooking (If you are going to do this atleast twice a day for literally rest of your life, better try to learn to make fine cuisine) (photos - plenty)
-    b. Water 
-    c. Badminton (photos Not many) 
-    d. Board games - Chess, Catan, Poker (personality traits)
-        Descritpion - 
-    -->
-
+    
     <!-- Importing Carousel starts from here -->
     <section class="about">
         <div class="about-container">
@@ -35,7 +26,7 @@
             <button class="carousel__dot"></button>
             <button class="carousel__dot"></button>
             <button class="carousel__dot"></button>
-            <button class="carousel__dot"></button>
+            <!-- <button class="carousel__dot"></button> -->
           </div>
           <div class="carousel" id="ID-carousel">
             <button class="carousel__button carousel__button--previous">
@@ -44,48 +35,64 @@
             <div class="carousel__stage">
               <ul class="carousel__track">
                 <li class="carousel__horse current-horse">
-                  <button type="button" class="about-button" id="ID-about-button">
+                  <div class="about-button-class" id="ID-about-button-class">
+                    <button type="button" class="about-button" id="ID-about-button">
                     <h1>Water</h1>
-                  </button>
-                  <div class="about-button-expanded">
+                    </button>
+                  </div>
+                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                    <div class="about-image-class">
                      <image src="../images/About/Water-1.jpeg"></image>
-                     <div class="caption">
-                      <p>A kid from a coastal town</p>
-                     </div>
+                    </div>
+                    <div class="caption">
+                      <p>A kid from a coastal town. This message is elongated for testing reasons. Do not bother to read this. Will change it later.</p>
+                    </div>
                   </div>
                 </li>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button" id="ID-about-button">
-                    <h1>Food</h1>
-                  </button>
-                  <div class="about-button-expanded">
-                    <image src="../images/About/Food-1.jpeg"></image>
-                     <div class="caption">
-                      <p>Tastes Good to Gourmet</p>
-                     </div>
+                  <div class="about-button-class" id="ID-about-button-class">
+                    <button type="button" class="about-button" id="ID-about-button">
+                      <h1>Food</h1>
+                    </button>
+                  </div>
+                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                    <div class="about-image-class">
+                      <image src="../images/About/Food-1.jpeg"></image>
+                    </div>
+                    <div class="caption">
+                      <p>Tastes Good to Gourmet. This message is elongated for testing reasons. Do not bother to read this. Will change it later.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button" id="ID-about-button">
-                    <h1>Feather</h1>
-                  </button>
-                  <div class="about-button-expanded">
-                    <image src="../images/About/Sweat-1.jpeg"></image>
-                     <div class="caption">
-                      <p>Reflexes couldn't get better</p>
-                     </div>
+                  <div class="about-button-class" id="ID-about-button-class">
+                    <button type="button" class="about-button" id="ID-about-button">
+                      <h1>Feather</h1>
+                    </button>
+                  </div>
+                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                    <div class="about-image-class">
+                      <image src="../images/About/Sweat-1.jpeg"></image>
+                    </div>
+                    <div class="caption">
+                      <p>Reflexes couldn't get better. This message is elongated for testing reasons. Do not bother to read this. Will change it later.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button" id="ID-about-button">
-                    <h1>Ideas</h1>
-                  </button>
-                  <div class="about-button-expanded">
-                    <image src="../images/About/Brain-1.jpeg"></image>
-                     <div class="caption">
-                      <p>Openings are way more dynamic</p>
-                     </div>
+                  <div class="about-button-class" id="ID-about-button-class">
+                    <button type="button" class="about-button" id="ID-about-button">
+                      <h1>Ideas</h1>
+                    </button>
+                  </div>
+                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                    <div class="about-image-class">
+                      <image src="../images/About/Brain-1.jpeg"></image>
+                    </div>
+                    <div class="caption">
+                      <p>Openings are way more dynamic. This message is elongated for testing reasons. Do not bother to read this. Will change it later.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="carousel__horse">
@@ -96,12 +103,12 @@
                     <p>Test Message5</p>
                   </div>
                 </li>
-                <li class="carousel__horse">
+                <!-- <li class="carousel__horse">
                   <button type="button" class="about-button"></button>
                   <div class="about-button-expanded">
                     <p>Test Message6</p>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
             <button class="carousel__button carousel__button--next">
@@ -113,7 +120,6 @@
 
       <script src="../JavaScript/About-expand.js"></script>
       <script src="../JavaScript/Carousel.js"></script>
-      <!-- <script src="../JavaScript/About-title.js"></script> -->
       <script>
         ScrollReveal({ 
           reset: true,
