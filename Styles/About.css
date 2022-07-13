@@ -6,7 +6,7 @@ body{
     /* display: inline-block; */
     
     width: 45%;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 18px;
     background: var(--color-background);
     font-family: 'Roboto', sans-serif;
@@ -41,14 +41,6 @@ Carousel
     /* opacity: 0.7; */
 }
 
-/* .about-button:hover,
-.about-button:focus{
-    width: 100%;
-    height: 150px;
-    transition: 0.7s;
-    background-image: url(../images/ProjectB.png);    
-} */
-
 .carousel{
     position: relative;
     transition: 0.7s;
@@ -60,6 +52,7 @@ Carousel
     Top and bottom margin are set to 0 */
     margin: 0 auto;
 }
+
 .horse{
     position: absolute;
     width: 100%;
@@ -101,7 +94,7 @@ Carousel
     position: absolute;
     /* display: flex; */
     /* TODO - Put a relative top */
-    top: 40px;
+    top: 22px;
     /* With "top: 50%", top of the div block starts from the 50% of the parent block
     We want the middle of the child to be at the 50% of the parent block */
     /* transform: translateY(-50%); */
@@ -113,15 +106,15 @@ Carousel
 }
 
 .carousel__button .LeftArrow {
-    width: 40px;
-    height: 40px;
-    opacity: 0.4;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
 }
 
 .carousel__button .RightArrow {
-    width: 40px;
-    height: 40px;
-    opacity: 0.4;   
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;   
 }
 
 .carousel__button--next{
@@ -136,7 +129,8 @@ Carousel
     /* background: #1fffff; */
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 25px 0 0 0;
+    margin: auto 0;
 }
 
 .carousel__dot{
@@ -164,75 +158,66 @@ About Photo Container
     /* This makes sure that image doesn't go beyond the screensize */
 }
 
-.about-button{
+.about-title{
     transition: ease-in-out;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    /* display: block; */
-    /* position: relative; */
-}
-
-.about-button-class{
-    transition: ease-in-out;
-    cursor: pointer;
     border: none;
     width: 100%;
     display: block;
     position: relative;
-    background-color: #afffff;
+    background-color: var(--color-background);
+    color: black;
+    font-size: 1.3rem;
+    font-style: italic;
 }
 
-.about .about-button h1{
-    transition: ease-in-out;
-    font-size: 3rem;
-    color: white;
+.about-header{
+    font-size: 2.3rem;
+    margin: auto 0;
+    display: flex;
 }
 
-.about-container .about-header{
-    font-size: 1.65rem;
-}
-
-.about-button-expanded{
-    display: none;
+.about-expanded{
     transition: 1s ease-out;
+    display: flex;
 }
 
 .about-image-class{
-    justify-content: center;
-    align-items: center;
     width:  1024px;
-    height: 768px;
+    display: flex;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
 
 .about-image-class img{
     z-index: 111;
-    top: 30%;
+    top: 0;
+    display: flex;
+    border-radius: 10px;
     transition: 0.8s;
     position: absolute;
     left: 0;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     object-fit: cover;
 }
 
 .caption{
     z-index: 222;
-    border: 1px solid rgba(207, 185, 151, 0.3);
-    background-color: rgba(207, 185, 151, 0.3);
-    backdrop-filter: blue(40px);
-    max-width: 80%;
+    display: flex;
+    font-size: 1.3rem;
+    border: 1px solid rgba(138, 102, 66, 0.65);
+    background-color: rgba(138, 102, 66, 0.65);
+    backdrop-filter: blur(2px);
+    max-width: 92%;
     text-align: center;
-    max-height: 200px;
+    max-height: 300px;
     margin: 0 auto;
-    padding: 20px;
-    color:black;
+    padding: 10px;
+    color: var(--color-background);
     line-height: 1.3;
     position: absolute;
-
-    transform: translate(15%, 300px);
-
+    transform: translate(4%, 100%);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
 }

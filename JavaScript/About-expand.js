@@ -7,7 +7,6 @@ for(index = 0; index<aboutButtonClass.length; index++){
 
         var currentButtonClass = this;    
         // currentButtonClass.style.backgroundColor 
-        
     
         var aboutButton = document.getElementById("ID-about-button");
         var buttonCaption = document.getElementById("ID-button-caption");

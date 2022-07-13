@@ -161,15 +161,15 @@ Project carousel
     /* This makes sure that image doesn't go beyond the screensize */
     background-size: cover;
 }
-.each-project .project-thumbnail{
+.project-thumbnail{
     transition: 0.7s;
-    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png);
+    background-image: url("images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Normal\).png");
 }
 
 .project-thumbnail:hover,
 .project-thumbnail:focus{
     transition: 0.7s;
-    background-image: url(images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png);
+    background-image: url("images/Projects/Thumbnail\ -\ Spot-the-race-track\ \(Hover\).png");
 }
 
 .project-container .project-header{
@@ -190,6 +190,8 @@ Project carousel
 }
 .horse{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -218,10 +220,10 @@ Project carousel
 }
 
 .carousel__horse{
-    /* position: absolute; */
+    position: absolute;
     
     /* changes for photo container */
-    position: relative;
+    /* position: relative; */
     display: flex;
 
     top: 0px;

@@ -1,5 +1,6 @@
 const trackArray = document.querySelector('.carousel__track');
 const horses = Array.from(trackArray.children);
+console.log(horses);
 const nextButton = document.querySelector('.carousel__button--next');
 const previousButton = document.querySelector('.carousel__button--previous');
 const dotsArray = document.querySelector('.carousel__dots');
@@ -38,9 +39,6 @@ nextButton.addEventListener('click', event=>{
     const nextDot = currentDot.nextElementSibling;
     moveDots(currentDot, nextDot);
 
-    // Shrinking the Carousel main body
-    var aboutButtonExpanded = document.getElementById("ID-about-button-expanded");
-    aboutButtonExpanded.style.display = "none";
 })
 // 2. Click Previous for image on the left
 previousButton.addEventListener('click', event => {
@@ -51,8 +49,6 @@ previousButton.addEventListener('click', event => {
     const previousDot = currentDot.previousElementSibling;
     moveDots(currentDot, previousDot);
     
-    var aboutButtonExpanded = document.getElementById("ID-about-button-expanded");
-    aboutButtonExpanded.style.display = "none";
 })
 
 // 3. Go to the respective image when clicked on any dot

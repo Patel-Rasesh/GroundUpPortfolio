@@ -26,7 +26,6 @@
             <button class="carousel__dot"></button>
             <button class="carousel__dot"></button>
             <button class="carousel__dot"></button>
-            <!-- <button class="carousel__dot"></button> -->
           </div>
           <div class="carousel" id="ID-carousel">
             <button class="carousel__button carousel__button--previous">
@@ -35,14 +34,10 @@
             <div class="carousel__stage">
               <ul class="carousel__track">
                 <li class="carousel__horse current-horse">
-                  <div class="about-button-class" id="ID-about-button-class">
-                    <button type="button" class="about-button" id="ID-about-button">
-                      <div class="button-caption" id="ID-button-caption">
-                        <h1>Rejuvenating sea-salt</h1>
-                      </div>
-                    </button>
+                  <div class="about-title">
+                    <h1>Rejuvenating sea-salt</h1>
                   </div>
-                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                  <div class="about-expanded">
                     <div class="about-image-class">
                      <image src="../images/About/Water-1.jpeg"></image>
                     </div>
@@ -51,14 +46,11 @@
                     </div>
                   </div>
                 </li>
-                </li>
                 <li class="carousel__horse">
-                  <div class="about-button-class" id="ID-about-button-class">
-                    <button type="button" class="about-button" id="ID-about-button">
-                      <h1>The cycle of saute and simmering</h1>
-                    </button>
+                  <div class="about-title">
+                    <h1>The cycle of saute and simmering</h1>
                   </div>
-                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                  <div class="about-expanded">
                     <div class="about-image-class">
                       <image src="../images/About/Food-1.jpeg"></image>
                     </div>
@@ -68,12 +60,10 @@
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <div class="about-button-class" id="ID-about-button-class">
-                    <button type="button" class="about-button" id="ID-about-button">
-                      <h1>Convincing your mind to put a little more faith in your physical capabilities</h1>
-                    </button>
+                  <div class="about-title">
+                    <h1>Convincing your mind to put</h1>
                   </div>
-                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                  <div class="about-expanded">
                     <div class="about-image-class">
                       <image src="../images/About/Sweat-1.jpeg"></image>
                     </div>
@@ -83,12 +73,10 @@
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <div class="about-button-class" id="ID-about-button-class">
-                    <button type="button" class="about-button" id="ID-about-button">
-                      <h1>Neurons fired!</h1>
-                    </button>
+                  <div class="about-title">
+                    <h1>Neurons fired!</h1>
                   </div>
-                  <div class="about-button-expanded" id="ID-about-button-expanded">
+                  <div class="about-expanded">
                     <div class="about-image-class">
                       <image src="../images/About/Brain-1.jpeg"></image>
                     </div>
@@ -98,19 +86,18 @@
                   </div>
                 </li>
                 <li class="carousel__horse">
-                  <button type="button" class="about-button" id="ID-about-button">
+                  <div class="about-title">
                     <h1>Placeholder</h1>
-                  </button>
-                  <div class="about-button-expanded">
-                    <p>Test Message5</p>
+                  </div>
+                  <div class="about-expanded">
+                    <div class="about-image-class">
+                      <image src="../images/About/Brain-1.jpeg"></image>
+                    </div>
+                    <div class="caption">
+                      <p>Test Message5</p>
+                    </div>
                   </div>
                 </li>
-                <!-- <li class="carousel__horse">
-                  <button type="button" class="about-button"></button>
-                  <div class="about-button-expanded">
-                    <p>Test Message6</p>
-                  </div>
-                </li> -->
               </ul>
             </div>
             <button class="carousel__button carousel__button--next">
@@ -120,16 +107,22 @@
         </div>
       </section>
 
-      <script src="../JavaScript/About-expand.js"></script>
+      <!-- <script src="../JavaScript/About-expand.js"></script> -->
       <script src="../JavaScript/Carousel.js"></script>
       <script>
         ScrollReveal({ 
           reset: true,
-          distance: '20px',
+          distance: '30px',
           duration: 900,
           delay: 100
          });
-         ScrollReveal().reveal('.about-header', { delay: 200 });
+        ScrollReveal().reveal('.about-header', { delay: 200 });
+        ScrollReveal().reveal('.RightArrow', { delay: 200 });
+        ScrollReveal().reveal('.LeftArrow', { delay: 200 });
+        ScrollReveal().reveal('.carousel__dots', { delay: 200 });
+        ScrollReveal().reveal('.about-title', { delay: 200 });
+        ScrollReveal().reveal('.about-image-class', {origin: 'right', delay: 200 });
+        ScrollReveal().reveal('.caption', {origin: 'left', delay: 200 });
       </script>
     </body>
 </html>
