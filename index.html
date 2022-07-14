@@ -25,7 +25,7 @@
                 <a href="#" class="home-link">Home</a>
               </li>
               <li>
-                <a href="#" class="projects-link">Projects</a>
+                <a href="#projects" class="projects-link">Projects</a>
               </li>
               <li>
                 <a href="HTML/About.html" target="_blank" class="about-link">About</a>
@@ -75,55 +75,57 @@
     Projects Container
     ----------------------------------------------------------------------------- -->
     <section class="projects">
-      <div class="project-container">
+      <div class="project-container" id="projects">
         <h1 class="project-header">Academic Projects</h1>
-        <div class="carousel">
-          <button class="carousel__button carousel__button--previous">
-            <img src="images/LeftArrow.svg" class="LeftArrow" alt="">  
-          </button>
-          <div class="carousel__stage">
-            <ul class="carousel__track">
-              <li class="carousel__horse current-horse">
-                <!-- target makes sure that it opens in a new window -->
-                <a href="HTML/Projects/LaneDetection.html" target="_blank">
-                  <div>
-                    <span class="each-project project-thumbnail"></span>
-                  </div>
-                </a>
-              </li>
-              </li>
-              <li class="carousel__horse">
-                <img class="horse" src="images/ProjectB.png" alt="">
-              </li>
-              <li class="carousel__horse">
-                <img class="horse" src="images/ProjectC.png" alt="">
-              </li>
-              <li class="carousel__horse">
-                <img class="horse" src="images/ProjectD.png" alt="">
-              </li>
-              <li class="carousel__horse">
-                <img class="horse" src="images/ProjectE.png" alt="">
-              </li>
-              <li class="carousel__horse">
-                <img class="horse" src="images/ProjectF.png" alt="">
-              </li>
-            </ul>
+        <!-- -----------------------------------------------------------------------------
+            Classic project container with "more items"
+            ----------------------------------------------------------------------------- -->
+
+        <div class="master-container">
+          <div class="container">
+              <div class="project1-class" id="ID-project1-class">
+                  <button class="project1-button">
+                      <h1>Extrapolating Hues couldn't violate more traffic rules</h1>
+                  </button>
+              </div>
+              <div class="project2-class" id="ID-project2-class">
+                  <button class="project2-button">
+                      <h1>Title Project2</h1>
+                  </button>
+              </div>
+              <div class="project3-class" id="ID-project3-class">
+                  <button class="project3-button">
+                      <h1>Title Project3 Longer title</h1>
+                  </button>
+              </div>
           </div>
-          <button class="carousel__button carousel__button--next">
-            <img src="images/RightArrow.svg" class="RightArrow" alt="">
-          </button> 
-          <div class="carousel__dots">
-            <button class="carousel__dot current-horse"></button>
-            <button class="carousel__dot"></button>
-            <button class="carousel__dot"></button>
-            <button class="carousel__dot"></button>
-            <button class="carousel__dot"></button>
-            <button class="carousel__dot"></button>
+          <div class="more-items-class">
+              <button class="more-items-button" id="ID-more-items-button">
+                  <h1>More items ...</h1>
+              </button>
+          </div>
+          <div class="extended-container" id="ID-extended-container">
+              <div class="project4-class" id="ID-project4-class">
+                  <button class="project4-button">
+                      <h1>Technocolor</h1>
+                  </button>
+              </div>
+              <div class="project5-class" id="ID-project5-class">
+                  <button class="project5-button">
+                      <h1>Shadow, underneath the window</h1>
+                  </button>
+              </div>
+              <div class="project6-class" id="ID-project6-class">
+                  <button class="project6-button">
+                      <h1>Just</h1>
+                  </button>
+              </div>
           </div>
         </div>
       </div>
     </section>
     <script src="JavaScript/Carousel.js"></script>
+    <script src="JavaScript/More-items.js"></script>
     
   </body>
 </html>

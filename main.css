@@ -8,10 +8,9 @@ body{
 
     Removes the extra portion of the div from each side
     display: flex;
-    align-items: center;
-    
     font-size: 18px; */
     justify-content: center;
+    align-items: center;
     background: var(--color-background)
 }
 
@@ -282,4 +281,76 @@ Project carousel
 
 .carousel__dot.current-horse{
     background-color: rgba(0,0,0,0.8);
+}
+
+/* ----------------------------------------------------------------------------
+Classic projects with "more items to expand"
+---------------------------------------------------------------------------- */
+.master-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.extended-container{
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+.project1-class,
+.project2-class,
+.project3-class,
+.project4-class,
+.project5-class,
+.project6-class{
+    padding: 10px;
+}
+
+.project1-button,
+.project2-button,
+.project3-button,
+.project4-button,
+.project5-button,
+.project6-button{
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.3;
+    padding: 7px;
+    width: 195px;
+    height: 205px;
+    cursor: pointer;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    background-color: transparent;
+    border-width: 3px;
+}
+
+.project1-button:hover,
+.project2-button:hover,
+.project3-button:hover,
+.project4-button:hover,
+.project5-button:hover,
+.project6-button:hover{
+    transition: 0.1s;
+    transform: scale(1.02);
+}
+
+.more-items-class{
+    transform: translate(260px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.more-items-button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.75rem;
 }
