@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     --color-background: #FAF9F6;
     margin: 0;
@@ -354,3 +357,128 @@ Classic projects with "more items to expand"
     cursor: pointer;
     font-size: 0.75rem;
 }
+
+/* ----------------------------------------------------------------------------
+Contact container
+---------------------------------------------------------------------------- */
+
+.contact-info{
+    /* border: 1px solid peachpuff; */
+    /* background-color: peachpuff; */
+    width: 41%;
+    margin: 0 auto;
+    font-size: 18px;
+    height: 350px;
+
+    /* Header and Body are block displayed */
+    display: block;
+}
+
+.contact-info-header h1{
+    font-size: 1.6rem;
+    margin: 5px 5px 5px 5px;
+}
+
+.contact-info-body{
+
+    /* Static and Dynamic contact-info are flexible */
+    display: flex;
+    padding: 0;
+}
+
+.dynamic-contact, .static-contact{
+
+    /* Contents inside these contact blocks are blocked displayed */
+    display: block;
+}
+
+.dynamic-contact{
+    text-align: left;
+    font-size: 1.2rem;
+    width: 60%;
+    /* background-color: yellow; */
+}
+
+.dynamic-contact-name{
+    margin: 10px 5px 10px 5px;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.dynamic-contact-name .name-text-box{
+    margin: 10px 5px 0px 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.dynamic-contact-message{
+    margin: 10px 5px 10px 5px;
+}
+
+.dynamic-contact-message .message-text-box{
+    margin: 10px 5px 0px 5px;
+    height: 150px;
+    text-align: left;
+    width: 330px;
+}
+
+.dynamic-contact-buttons{
+    margin: 0 0 0 5px;
+    display: flex;
+}
+.dynamic-contact-buttons-send,
+.dynamic-contact-buttons-clear{
+    margin: 0 5px 0 0;
+}
+
+.static-contact{
+    text-align: right;
+    width: 40%;
+    /* background-color: palevioletred; */
+}
+
+.contact-info-body-email-title,
+.contact-info-body-phone-title{
+    margin: 0 5px 0 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: right;
+    display: flex;
+    padding: 0;
+}
+
+.contact-info-body-email-data,
+.contact-info-body-phone-data{
+    margin: -20px 5px 60px 0;
+    padding: 0;
+}
+
+.contact-info-body-email-data:hover,
+.contact-info-body-phone-data:hover{
+    transition: 0.1s;
+    transform: scale(1.07);
+    cursor: pointer;    
+}
+
+.phone-icon-class,
+.email-icon-class{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.phone-icon-class img,
+.email-icon-class img{
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+
+
