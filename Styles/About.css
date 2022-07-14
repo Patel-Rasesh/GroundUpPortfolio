@@ -153,7 +153,7 @@ About Photo Container
 ------------------------------------------------------------------------------------------- */
 
 .about{
-    /* display: block; */
+    display: block;
     width: 100%;
     /* This makes sure that image doesn't go beyond the screensize */
 }
@@ -183,7 +183,6 @@ About Photo Container
 
 .about-image-class{
     width:  1024px;
-    display: flex;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -192,7 +191,6 @@ About Photo Container
 .about-image-class img{
     z-index: 111;
     top: 0;
-    display: flex;
     border-radius: 10px;
     transition: 0.8s;
     position: absolute;
