@@ -88,7 +88,7 @@ section.header{
 }
 
 .headerbar .social ul{
-    margin-left: 200%;
+    margin-left: 120%;
     padding-left: 15px;
     margin-top: -50px;
 }
@@ -184,30 +184,29 @@ Project carousel
 .carousel{
     position: relative;
     height: 200px;
-    width: 35%;
-    
+    width: 100%;
+
     /* Left and right margin are set to auto (sit centrally of the parent div)
     Top and bottom margin are set to 0 */
     margin: 0 auto;
 }
-.horse{
+/* .horse{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .carousel__stage{
     position: relative;
-    background: #1fdfff;
+    /* background: #1fdfff; */
     height: 100%;
     width: 100%;
     overflow: hidden;
     top: 10px;
     margin-bottom: 10px;
-    border-radius: 23px;
 }
 
 .carousel__track{
@@ -235,6 +234,7 @@ Project carousel
 
 .carousel__button{
     position: absolute;
+    display: none;
     /* display: flex; */
     top: 50%;
     /* With "top: 50%", top of the div block starts from the 50% of the parent block
@@ -364,13 +364,13 @@ Highlight container
 .highlight{
     width: 41%;
     margin: 0 auto;
-    background-color: peru;
+    /* background-color: peru; */
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
+    padding: 5px;
 }
 
-.highlight-header{
-    font-size: 2rem;
+.highlight-header h1{
+    font-size: 1.6rem;
     margin: 5px 0px 5px 0px;
     /* background-color: aquamarine; */
 }
@@ -378,9 +378,17 @@ Highlight container
 .leetcode-card,
 .jogging-card,
 .spotify-card{
-    background-color: lemonchiffon;
-    padding: 10px;
-    margin: 15px 0px 15px 0px;
+    background-color: white;
+    /* padding: 10px; */
+    /* margin: 15px 0px 15px 0px; */
+
+    /* Borrowed from horse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-header{
@@ -399,12 +407,24 @@ Highlight container
 .card-subtitle{
     margin: 5px 0px 5px 0px;
     font-size: 1.3rem;
+    display: flex;
 }
+
+.card-subtitle .distance{
+    width: 50%;
+}
+
+.card-subtitle .date{
+    width: 50%;
+    text-align: right;
+}
+
 .card-component{
     display: flex;
     /* background-color: lightsalmon; */
     font-size: 1.2rem;
     align-items: top;
+    margin: 30px 0px 30px 0px;
 }
 
 .leetcode-card .problem-statement{
@@ -443,6 +463,7 @@ Highlight container
 .jogging-card .calories,
 .jogging-card .duration,
 .jogging-card .speed{
+    padding: 7px;
     width: 33.33%;
 }
 
@@ -457,17 +478,41 @@ Highlight container
 .jogging-card .speed{
     text-align: right;
 }
+
+.card-icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+}
+
+.card-icon img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
 /* ----------------------------------------------------------------------------
 Contact container
 ---------------------------------------------------------------------------- */
+.contact-info-section{
+    width: 41%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .contact-info{
     /* border: 1px solid peachpuff; */
     /* background-color: peachpuff; */
-    width: 41%;
+    width: 100%;
     margin: 0 auto;
     font-size: 18px;
     height: 350px;
+    text-align: left;
 
     /* Header and Body are block displayed */
     display: block;
@@ -475,7 +520,7 @@ Contact container
 
 .contact-info-header h1{
     font-size: 1.6rem;
-    margin: 5px 5px 5px 5px;
+    margin: 65px 5px 5px 5px;
 }
 
 .contact-info-body{

@@ -28,7 +28,13 @@
                 <a href="#projects" class="projects-link">Projects</a>
               </li>
               <li>
+                <a href="#highlights">Highlights</a>
+              </li>
+              <li>
                 <a href="HTML/About.html" target="_blank" class="about-link">About</a>
+              </li>
+              <li>
+                <a href="#contact-info">Contact</a>
               </li>
             </ul>
           </div>
@@ -130,92 +136,119 @@
     <!-- -----------------------------------------------------------------------------
     Highlight section
     ----------------------------------------------------------------------------- -->
-    <section class="highlight-section">
+    <section class="highlight-section" id="highlights">
       <div class="highlight">
         <div class="highlight-header">
-          Highlight
+          <h1>Highlights</h1>
         </div>
+        
+        <div class="carousel" id="ID-carousel">
+          <button class="carousel__button carousel__button--previous">
+            <img src="images/LeftArrow.svg" class="LeftArrow" alt="">  
+          </button>
+          <div class="carousel__stage">
+            <ul class="carousel__track">
+              <li class="carousel__horse current-horse">
+                <!-- Create three (or more) cards which are going to be Carouselling on specific interval -->
+                <!-- LEETCODE -->
+                <div class="leetcode-card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <image src="images/Highlight/leetcode-icon.svg" class="leetcode-icon">
+                      </image>
+                    </div>
+                    <div class="card-title">
+                      Most Recent Submission on Leetcode
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-component">
+                      <div class="difficulty-class">
+                        <!-- This block shows the color of difficulty of the problem -->
+                      </div>
+                      <div class="problem-statement">
+                        <a href="https://leetcode.com/submissions/detail/742094568/" class="problem-statement-link" target="_blank">
+                          Number of connected components in an undirected graph
+                        </a>
+                      </div>
+                      <div class="timestamp">
+                        3 days ago
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-        <!-- Create three (or more) cards which are going to be Carouselling on specific interval -->
+              <li class="carousel__horse">
+                <!-- RUN TRACKER -->
+                <div class="jogging-card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <image src="images/Highlight/run-icon.svg" class="run-icon"></image>
+                    </div>
+                    <div class="card-title">
+                      About last jog
+                    </div>
+                  </div>
+                  <div class="card-subtitle">
+                    <div class="distance">
+                      Run: 4.31 mi
+                    </div>
+                    <div class="date">
+                      Fri 9th, 2022
+                    </div>
+                  </div>
+                  <div class="card-component">
+                    <div class="calories">
+                      609 <br> kcal
+                    </div>
+                    <div class="duration">
+                      51:25 <br> Duration
+                    </div>
+                    <div class="speed">
+                      11' 52'' <br> Avg Speed
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-        <!-- LEETCODE -->
-        <div class="leetcode-card">
-          <div class="card-header">
-            <div class="card-icon">
-              <image src="images/Highlight/leetcode-icon" class="leetcode-icon">
-              </image>
-            </div>
-            <div class="card-title">
-              Most Recent Submission on Leetcode
-            </div>
+              <li class="carousel__horse">
+                <!-- SPOTIFY -->
+                <div class="spotify-card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <image src="images/Highlight/spotify-icon.svg" class="spotify-icon"></image>
+                    </div>
+                    <div class="card-title">
+                      Last Played on Spotify
+                    </div>
+                  </div>
+                  <div class="card-subtitle">
+                    Fields Of Gold
+                  </div>
+                  <div class="card-component">
+                    Song - Sting
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> 
+          <button class="carousel__button carousel__button--next">
+            <img src="images/RightArrow.svg" class="RightArrow" alt="">
+          </button>  
+          <div class="carousel__dots">
+            <button class="carousel__dot current-horse"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
           </div>
-          <div class="card-body">
-            <div class="card-component">
-              <div class="difficulty-class">
-                <!-- This block shows the color of difficulty of the problem -->
-              </div>
-              <div class="problem-statement">
-                <a href="https://leetcode.com/submissions/detail/742094568/" class="problem-statement-link" target="_blank">
-                  Number of connected components in an undirected graph
-                </a>
-              </div>
-              <div class="timestamp">
-                3 days ago
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- RUN TRACKER -->
-        <div class="jogging-card">
-          <div class="card-header">
-            <div class="card-icon">
-              <image src="images/Highlight/jogging-icon" class="run-icon"></image>
-            </div>
-            <div class="card-title">
-              About last jog
-            </div>
-          </div>
-          <div class="card-subtitle">
-            Run: 4.31 mi
-          </div>
-          <div class="card-component">
-            <div class="calories">
-              609 <br> kcal
-            </div>
-            <div class="duration">
-              51:25 <br> Duration
-            </div>
-            <div class="speed">
-              11' 52'' <br> Avg Speed
-            </div>
-          </div>
-        </div>
-
-        <!-- SPOTIFY -->
-        <div class="spotify-card">
-          <div class="card-header">
-            <div class="card-icon">
-              <image src="images/Highlight/spotify-icon" class="spotify-icon"></image>
-            </div>
-            <div class="card-title">
-              Last Played on Spotify
-            </div>
-          </div>
-          <div class="card-subtitle">
-            Fields Of Gold
-          </div>
-          <div class="card-component">
-            Song - Sting
-          </div>
-        </div>
+        </div>  
       </div>
     </section>
 
     <!-- -----------------------------------------------------------------------------
     Contact container
     ----------------------------------------------------------------------------- -->
-    <section class="contact-info-section">
+    <section class="contact-info-section" id="contact-info">
       <div class="contact-info">
         <div class="contact-info-header">
           <h1>Contact Information</h1>
