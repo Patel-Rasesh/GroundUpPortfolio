@@ -33,24 +33,24 @@ section.header{
     padding: 10px;
     box-sizing: border-box;
     display: flex;
-    height: 100px;
+    height: 90px;
 }
 
-.headerbar .headermenus{
+.headermenus{
     display: flex;
 }
 
-.headerbar .menu ul,
-.headerbar .social ul{
+.menu ul,
+.social ul{
     list-style: none;
     display: flex;
 }
 
-.headerbar .menu ul{
+.menu ul{
     margin-top: 23px;
 }
 
-.headerbar .menu ul a{
+.menu ul a{
     padding: 10px 10px 13px 10px;
     line-height: 27px;
     text-decoration: none;
@@ -63,11 +63,11 @@ section.header{
     font-size: 1rem;
 }
 
-.headerbar .menu ul a:hover,
-.headerbar .menu ul a:active,
-.headerbar .menu ul a:visited,
-.headerbar .menu ul a:active:hover,
-.headerbar .menu ul a.active{
+.menu ul a:hover,
+.menu ul a:active,
+.menu ul a:visited,
+.menu ul a:active:hover,
+.menu ul a.active{
     /* color: #1475a2; */
     /* font-weight: bold; */
     border: 1px solid #E8DCD5;
@@ -77,39 +77,41 @@ section.header{
     border-radius: 9px;
 }
 
-.headerbar .social ul li img{
+.social ul li img{
     width: 35px;
 }
 
-.headerbar .social .LinkedInGradient{
+.social .LinkedInGradient{
     width: 44px;
     margin-top: -5px;
     margin-right: -4px;
 }
 
-.headerbar .social ul{
-    margin-left: 120%;
-    padding-left: 15px;
-    margin-top: -50px;
+.social ul{
+    margin-left: 33%;
+    margin-top: 23%;
+    /* padding: 5px; */
+    /* margin-top: -50px; */
 }
 
-.headerbar .social ul li{
-    margin-right: 15px;
+.social ul li{
+    /* margin-right: 15px; */
 }
 
-.headerbar .social ul li:last-child{
-    margin-right: 0px;
+.social ul li:last-child{
+    /* margin-right: 0px; */
 }
 
-.headerbar .social ul a img{
+.social ul a img{
     opacity: 1;
+    padding: 3px;
     transition: opacity 0.5s;
 }
 
-.headerbar .social ul a:hover img,
-.headerbar .social ul a:active img,
-.headerbar .social ul a:visited img,
-.headerbar .social ul a:active:hover img{
+.social ul a:hover img,
+.social ul a:active img,
+.social ul a:visited img,
+.social ul a:active:hover img{
     opacity: 0.5;
     transition: opacity 0.5s;
 }
@@ -118,7 +120,7 @@ Home container
 ---------------------------------------------------------------------------- */
 .home-container{
     margin-left: 450px;
-    margin-top: 35px;
+    margin-top: 2px;
     display: flex;
 }
 .home-container .text-details{
@@ -505,6 +507,10 @@ Contact container
     text-align: center;
 }
 
+.credits{
+    font-size: 0.8rem;
+}
+
 .contact-info{
     /* border: 1px solid peachpuff; */
     /* background-color: peachpuff; */
@@ -521,6 +527,8 @@ Contact container
 .contact-info-header h1{
     font-size: 1.6rem;
     margin: 65px 5px 5px 5px;
+    padding: 15px;
+    border-bottom: 0.5px solid #e4e6ea;
 }
 
 .contact-info-body{
@@ -544,7 +552,7 @@ Contact container
 }
 
 .dynamic-contact-name{
-    margin: 10px 5px 10px 5px;
+    margin: 1px 5px 10px 5px;
     display: flex;
     font-size: 1.3rem;
     font-weight: bold;
@@ -557,13 +565,13 @@ Contact container
 }
 
 .dynamic-contact-name .name-text-box{
-    margin: 10px 39px 0px 5px;
+    margin: 10px 12px 0px 5px;
     height: 30px;
-    width: 200px;
+    width: 230px;
 }
 
 .dynamic-contact-message{
-    margin: 10px 5px 10px 5px;
+    margin: 15px 5px 5px 10px;
 }
 
 .dynamic-contact-message .message-text-box{
@@ -574,12 +582,12 @@ Contact container
 }
 
 .dynamic-contact-buttons{
-    margin: 0 0 0 5px;
+    margin: 0 0 0 7px;
     display: flex;
 }
 .dynamic-contact-buttons-send,
 .dynamic-contact-buttons-clear{
-    margin: 5px 5px 0 0;
+    margin: 0px 5px 0 0;
 }
 
 .static-contact{
@@ -590,8 +598,8 @@ Contact container
 
 .contact-info-body-email-title,
 .contact-info-body-phone-title{
-    margin: 0 5px 0 0;
-    font-size: 1.3rem;
+    margin: 0px 5px 20px 0px;
+    font-size: 1rem;
     font-weight: bold;
     justify-content: right;
     display: flex;
@@ -600,8 +608,9 @@ Contact container
 
 .contact-info-body-email-data,
 .contact-info-body-phone-data{
-    margin: -20px 5px 60px 0;
+    margin: -30px 5px 0 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 .contact-info-body-email-data:hover,
@@ -624,10 +633,10 @@ Contact container
 .phone-icon-class img,
 .email-icon-class img{
     position: absolute;
-    top: 17px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
+    top: 14px;
+    right: 5px;
+    width: 22px;
+    height: 22px;
     overflow: hidden;
 }
 
@@ -635,21 +644,24 @@ Contact container
 .send-icon-class img{
     position: absolute;
     top: -10px;
-    left: 0px;
-    right: -3px;
+    left: -6px;
+    right: 0px;
     bottom: 0px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     overflow: hidden;
 }
 
 .send,
 .clear{
-    width: 38px;
+    width: 35px;
     cursor: pointer;
-    height: 38px;
-    background: transparent;
+    height: 35px;
+    padding: 10px;
+    background-color: lightgray;
     border: none;
+    border-radius: 12px;
+    
 }
 
 .send:hover,
