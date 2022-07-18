@@ -5,19 +5,18 @@ body{
 
     /* TODO - Decide your color palette and define them here*/
     --color-background: #FAF9F6;
-    margin: 0;
 
     /* This height refers to the screen/window height.
     For instance, in case of 200vh, we have scrollable window
     height: 100vh; */
-    justify-content: center;
-    align-items: center;
-    background: var(--color-background)
-}
+    margin: 0 auto;
 
-section{
-    width: 100%;
-    /* position: absolute; */
+    /* Align-items aligns on y-axis
+    Justify-content aligns on x-axis */
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: var(--color-background)
 }
 
 section.header{
@@ -25,40 +24,37 @@ section.header{
 }
 
 .headerbar{
-    width: 50%;
     max-width: 1200px;
-    margin: auto;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    height: 90px;
 }
 
 .headermenus{
     display: flex;
 }
 
-.menu ul,
-.social ul{
+.menu ul{
     list-style: none;
     display: flex;
+    justify-content: right;
+    margin-top: 23px;
+    align-items: center;
 }
 
-.menu ul{
-    margin-top: 23px;
+.menu li{
+    justify-content: left;
+    text-align: left;
 }
 
 .menu ul a{
     padding: 10px 10px 13px 10px;
-    line-height: 27px;
+    line-height: 1.7;
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 9px;
-    margin: auto 1px;
+    margin: 0 auto;
     transition: border 0.7s;
-    background-color: transparent;
     transition: background-color 0.7s;
-    font-size: 1rem;
 }
 
 .menu ul a:hover,
@@ -66,8 +62,6 @@ section.header{
 .menu ul a:visited,
 .menu ul a:active:hover,
 .menu ul a.active{
-    /* color: #1475a2; */
-    /* font-weight: bold; */
     border: 1px solid #E8DCD5;
     background-color: #E8DCD5;
     transition: border 0.5s;
@@ -75,50 +69,10 @@ section.header{
     border-radius: 9px;
 }
 
-.social ul li img{
-    width: 35px;
-}
-
-.social .LinkedInGradient{
-    width: 44px;
-    margin-top: -5px;
-    margin-right: -4px;
-}
-
-.social ul{
-    margin-left: 33%;
-    margin-top: 23%;
-    /* padding: 5px; */
-    /* margin-top: -50px; */
-}
-
-.social ul li{
-    /* margin-right: 15px; */
-}
-
-.social ul li:last-child{
-    /* margin-right: 0px; */
-}
-
-.social ul a img{
-    opacity: 1;
-    padding: 3px;
-    transition: opacity 0.5s;
-}
-
-.social ul a:hover img,
-.social ul a:active img,
-.social ul a:visited img,
-.social ul a:active:hover img{
-    opacity: 0.5;
-    transition: opacity 0.5s;
-}
 /* ----------------------------------------------------------------------------
 Home container
 ---------------------------------------------------------------------------- */
 .home-container{
-    margin-left: 450px;
-    margin-top: 2px;
     display: flex;
 }
 .home-container .text-details{
@@ -126,25 +80,25 @@ Home container
 }
 .home-container .name{
     font-size: 3rem;
-    padding: 0;
     margin-bottom: 0;
-    /* font-style:bold; */
 }
 .home-container .bio{
     margin-top: 0;
+    /* TODO - declare this color in color pallete and call variable here */
     color: #545454;
     font-size: 1.1rem;
     font-weight: normal;
 }
 .home-container .mission{
     font-size: 1.3rem;
+    /* TODO - declare this color in color pallete and call variable here */
     color: #545454;
     font-style: italic;
     display: flex;
 }
 .home-container img{
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 80px;
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -176,7 +130,6 @@ Project carousel
 
 .project-container .project-header{
     margin-top: 50px;
-    margin-left: 450px;
     margin-bottom: 0;
     padding: 0;
     font-size: 1.65rem;
@@ -190,18 +143,9 @@ Project carousel
     Top and bottom margin are set to 0 */
     margin: 0 auto;
 }
-/* .horse{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 .carousel__stage{
     position: relative;
-    /* background: #1fdfff; */
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -275,15 +219,15 @@ Project carousel
     border: 0;
     /* This makes them a circle  */
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 0 12px;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .carousel__dot.current-horse{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
 }
 
 /* ----------------------------------------------------------------------------
@@ -291,7 +235,7 @@ Classic projects with "more items to expand"
 ---------------------------------------------------------------------------- */
 .master-container{
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .container{
@@ -304,7 +248,9 @@ Classic projects with "more items to expand"
 .extended-container{
     display: none;
     justify-content: center;
-    align-items: center; 
+    /* TODO - aligning left is not working  */
+    align-items: left; 
+    width: 100%;
 }
 
 .project1-class,
@@ -326,8 +272,8 @@ Classic projects with "more items to expand"
     vertical-align: top;
     line-height: 1.3;
     padding: 7px;
-    width: 195px;
-    height: 205px;
+    width: 175px;
+    height: 190px;
     cursor: pointer;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     background-color: transparent;
@@ -345,9 +291,8 @@ Classic projects with "more items to expand"
 }
 
 .more-items-class{
-    transform: translate(260px);
+    /* transform: translate(260px); */
     justify-content: center;
-    align-items: center;
     display: flex;
 }
 
@@ -355,6 +300,8 @@ Classic projects with "more items to expand"
     border: none;
     background: transparent;
     cursor: pointer;
+    text-align: right;
+    width: 100%;
     font-size: 0.75rem;
 }
 
@@ -362,9 +309,9 @@ Classic projects with "more items to expand"
 Highlight container
 ---------------------------------------------------------------------------- */
 .highlight{
-    width: 41%;
+    width: 100%;
+    height: 225px;
     margin: 0 auto;
-    /* background-color: peru; */
     font-family: 'Roboto', sans-serif;
     padding: 5px;
 }
@@ -372,29 +319,22 @@ Highlight container
 .highlight-header h1{
     font-size: 1.6rem;
     margin: 5px 0px 5px 0px;
-    /* background-color: aquamarine; */
 }
 
 .leetcode-card,
 .jogging-card,
 .spotify-card{
     background-color: white;
-    /* padding: 10px; */
-    /* margin: 15px 0px 15px 0px; */
-
-    /* Borrowed from horse */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 170px;
     object-fit: cover;
 }
 
 .card-header{
     display: flex;
-
-    /* Align-items moves children on y-axis, and justify-content on x-axis */
     align-items: center;
 }
 
@@ -424,7 +364,7 @@ Highlight container
     /* background-color: lightsalmon; */
     font-size: 1.2rem;
     align-items: top;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 .leetcode-card .problem-statement{
@@ -458,7 +398,6 @@ Highlight container
     transition: 0.8s;
     font-style: normal;
 }
-
 
 .jogging-card .calories,
 .jogging-card .duration,
@@ -500,7 +439,7 @@ Highlight container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
-    width: 41%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -515,7 +454,7 @@ Contact container
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
-    height: 350px;
+    height: 320px;
     text-align: left;
 
     /* Header and Body are block displayed */
@@ -524,8 +463,8 @@ Contact container
 
 .contact-info-header h1{
     font-size: 1.6rem;
-    margin: 65px 5px 5px 5px;
-    padding: 15px;
+    margin: 65px 5px 5px 0px;
+    padding: 0px 0px 5px 0px;
     border-bottom: 0.5px solid #e4e6ea;
 }
 
@@ -545,12 +484,11 @@ Contact container
 .dynamic-contact{
     text-align: left;
     font-size: 1.2rem;
-    width: 60%;
-    /* background-color: yellow; */
+    width: 70%;
 }
 
 .dynamic-contact-name{
-    margin: 1px 5px 10px 5px;
+    margin: 1px 5px 10px 0px;
     display: flex;
     font-size: 1.3rem;
     font-weight: bold;
@@ -563,21 +501,26 @@ Contact container
 }
 
 .dynamic-contact-name .name-text-box{
-    margin: 10px 12px 0px 5px;
+    margin: 10px 12px 0px 0px;
     height: 30px;
-    width: 230px;
+    width: 320px;
 }
 
 .dynamic-contact-message{
-    margin: 15px 5px 5px 10px;
+    width: 100%;
+    /* background-color: pink; */
+    margin: 15px 0px 0px 0px;
 }
 
-.dynamic-contact-message .message-text-box{
+.dynamic-contact-message .dynamic-contact-message{
+    width: 80%;
+    text-align: left;
+}
+
+/* .dynamic-contact-message .message-text-box{
     margin: 10px 5px 0px 5px;
     height: 150px;
-    text-align: left;
-    width: 330px;
-}
+} */
 
 .dynamic-contact-buttons{
     margin: 0 0 0 7px;
@@ -590,8 +533,7 @@ Contact container
 
 .static-contact{
     text-align: right;
-    width: 40%;
-    /* background-color: palevioletred; */
+    width: 30%;
 }
 
 .contact-info-body-email-title,
@@ -666,4 +608,37 @@ Contact container
 .clear:hover{
     transition: 0.3s;
     transform: scale(1.09);
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+}
+.social ul li img{
+    width: 35px;
+}
+
+.social .LinkedInGradient{
+    width: 44px;
+    margin-top: -5px;
+    margin-right: -4px;
+}
+
+.social ul{
+    justify-content: right;
+    margin-top: 17%;
+}
+
+.social ul a img{
+    opacity: 1;
+    padding: 3px;
+    transition: opacity 0.5s;
+}
+
+.social ul a:hover img,
+.social ul a:active img,
+.social ul a:visited img,
+.social ul a:active:hover img{
+    opacity: 0.5;
+    transition: opacity 0.5s;
 }

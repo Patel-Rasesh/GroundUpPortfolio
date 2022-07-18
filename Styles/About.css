@@ -5,16 +5,10 @@ body{
     --color-background: #FAF9F6;
     /* display: inline-block; */
     
-    width: 45%;
-    margin: 20px auto;
-    font-size: 18px;
+    width: 50%;
+    margin: 0px auto;
     background: var(--color-background);
     font-family: 'Roboto', sans-serif;
-}
-body img{
-    margin-top: 20px;
-    width: 100%;
-    height: 90%;
 }
 
 html{
@@ -30,40 +24,37 @@ section.header{
 }
 
 .headerbar{
-    width: 50%;
     max-width: 1200px;
-    margin: auto;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    height: 90px;
 }
 
 .headermenus{
     display: flex;
 }
 
-.menu ul,
-.social ul{
+.menu ul{
     list-style: none;
     display: flex;
+    justify-content: right;
+    margin-top: 23px;
+    align-items: center;
 }
 
-.menu ul{
-    margin-top: 23px;
+.menu li{
+    justify-content: left;
+    text-align: left;
 }
 
 .menu ul a{
     padding: 10px 10px 13px 10px;
-    line-height: 27px;
+    line-height: 1.7;
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 9px;
-    margin: auto 1px;
+    margin: 0 auto;
     transition: border 0.7s;
-    background-color: transparent;
     transition: background-color 0.7s;
-    font-size: 1rem;
 }
 
 .menu ul a:hover,
@@ -71,106 +62,47 @@ section.header{
 .menu ul a:visited,
 .menu ul a:active:hover,
 .menu ul a.active{
-    /* color: #1475a2; */
-    /* font-weight: bold; */
     border: 1px solid #E8DCD5;
+    /* TODO - Declare and reuse color variable */
     background-color: #E8DCD5;
     transition: border 0.5s;
     transition: background-color 0.5s;
     border-radius: 9px;
 }
 
-.social ul li img{
-    width: 35px;
-}
-
-.social .LinkedInGradient{
-    width: 44px;
-    margin-top: -5px;
-    margin-right: -4px;
-}
-
-.social ul{
-    margin-left: 33%;
-    margin-top: 23%;
-    /* padding: 5px; */
-    /* margin-top: -50px; */
-}
-
-.social ul li{
-    /* margin-right: 15px; */
-}
-
-.social ul li:last-child{
-    /* margin-right: 0px; */
-}
-
-.social ul a img{
-    opacity: 1;
-    padding: 3px;
-    transition: opacity 0.5s;
-}
-
-.social ul a:hover img,
-.social ul a:active img,
-.social ul a:visited img,
-.social ul a:active:hover img{
-    opacity: 0.5;
-    transition: opacity 0.5s;
-}
-
-
 /* -------------------------------------------------------------------------------------------
 Carousel
 ------------------------------------------------------------------------------------------- */
 /* TODO - Left component can be parent */
-.carousel__stage .about-button-expanded img{
+/* .carousel__stage .about-button-expanded img{
     transition: ease-in-out;
-    margin: auto 0;
-    margin-top: -360px;
+    margin: 0 auto;
     object-fit: contain;
     border-radius: 5px;
-    /* opacity: 0.7; */
-}
+} */
 
 .carousel{
     position: relative;
     transition: 0.7s;
-    /* TODO - Put a relative height */
     height: 500px;
     width: 100%;
-    
-    /* Left and right margin are set to auto (sit centrally of the parent div)
-    Top and bottom margin are set to 0 */
     margin: 0 auto;
-}
-
-.horse{
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
 }
 
 .carousel__stage{
     position: relative;
     background: -var(--color-background);
-    height: 140%;
+    height: 200%;
     width: 100%;
     overflow: hidden;
-    top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    /* border-radius: 5px; */
 }
 
 .carousel__track{
     padding: 0;
     margin: 0;
     list-style: none;
-    /* position: absolute; */
     position: relative;
     height: 100%;
-    border: none;
     /* Transition upon each transform */
     transition: transform 290ms ease-in;
 }
@@ -178,8 +110,9 @@ Carousel
 .carousel__horse{
     position: absolute;
     top: 0px;
-    bottom: 0px;
+    left: 0px;
     width: 100%;
+    height: 100%;
 }
 
 .carousel__button{
@@ -194,7 +127,6 @@ Carousel
     cursor: pointer;
     background: transparent;
     border: 0;
-    /* background-color: black; */
 }
 
 .carousel__button .LeftArrow {
@@ -218,26 +150,25 @@ Carousel
 }
 
 .carousel__dots{
-    /* background: #1fffff; */
     display: flex;
     justify-content: center;
-    padding: 25px 0 0 0;
-    margin: auto 0;
+    padding: 5px 0 0 0;
+    margin: 0 auto;
 }
 
 .carousel__dot{
-    border: 0;
+    border: none;
     /* This makes them a circle  */
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 0 12px;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .carousel__dot.current-horse{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
 }
 
 /* -------------------------------------------------------------------------------------------
@@ -247,7 +178,6 @@ About Photo Container
 .about{
     display: block;
     width: 100%;
-    /* This makes sure that image doesn't go beyond the screensize */
 }
 
 .about-title{
@@ -255,17 +185,14 @@ About Photo Container
     border: none;
     width: 100%;
     display: block;
-    position: relative;
     background-color: var(--color-background);
     color: black;
-    font-size: 1.3rem;
     font-style: italic;
 }
 
 .about-header{
-    font-size: 2.3rem;
-    margin: auto 0;
-    display: flex;
+    font-size: 1.6rem;
+    margin: 5px auto;
 }
 
 .about-expanded{
@@ -279,16 +206,16 @@ About Photo Container
     position: relative;
     overflow: hidden;
 }
-
+ 
 .about-image-class img{
     z-index: 111;
     top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
     border-radius: 10px;
     transition: 0.8s;
     position: absolute;
-    left: 0;
-    width: 90%;
-    height: 80%;
     object-fit: cover;
 }
 
@@ -307,7 +234,9 @@ About Photo Container
     color: var(--color-background);
     line-height: 1.3;
     position: absolute;
-    transform: translate(4%, 100%);
+    top: 65%;
+    left: 5%;
+    /* transform: translate(4%, 100%); */
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
 }
@@ -316,7 +245,7 @@ About Photo Container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
-    width: 41%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -331,7 +260,7 @@ Contact container
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
-    height: 350px;
+    height: 320px;
     text-align: left;
 
     /* Header and Body are block displayed */
@@ -340,8 +269,8 @@ Contact container
 
 .contact-info-header h1{
     font-size: 1.6rem;
-    margin: 65px 5px 5px 5px;
-    padding: 15px;
+    margin: 65px 5px 5px 0px;
+    padding: 0px 0px 5px 0px;
     border-bottom: 0.5px solid #e4e6ea;
 }
 
@@ -361,12 +290,11 @@ Contact container
 .dynamic-contact{
     text-align: left;
     font-size: 1.2rem;
-    width: 60%;
-    /* background-color: yellow; */
+    width: 70%;
 }
 
 .dynamic-contact-name{
-    margin: 1px 5px 10px 5px;
+    margin: 1px 5px 10px 0px;
     display: flex;
     font-size: 1.3rem;
     font-weight: bold;
@@ -379,21 +307,26 @@ Contact container
 }
 
 .dynamic-contact-name .name-text-box{
-    margin: 10px 12px 0px 5px;
+    margin: 10px 12px 0px 0px;
     height: 30px;
-    width: 230px;
+    width: 320px;
 }
 
 .dynamic-contact-message{
-    margin: 15px 5px 5px 10px;
+    width: 100%;
+    /* background-color: pink; */
+    margin: 15px 0px 0px 0px;
 }
 
-.dynamic-contact-message .message-text-box{
+.dynamic-contact-message .dynamic-contact-message{
+    width: 80%;
+    text-align: left;
+}
+
+/* .dynamic-contact-message .message-text-box{
     margin: 10px 5px 0px 5px;
     height: 150px;
-    text-align: left;
-    width: 330px;
-}
+} */
 
 .dynamic-contact-buttons{
     margin: 0 0 0 7px;
@@ -406,8 +339,7 @@ Contact container
 
 .static-contact{
     text-align: right;
-    width: 40%;
-    /* background-color: palevioletred; */
+    width: 30%;
 }
 
 .contact-info-body-email-title,
@@ -482,4 +414,37 @@ Contact container
 .clear:hover{
     transition: 0.3s;
     transform: scale(1.09);
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+}
+.social ul li img{
+    width: 35px;
+}
+
+.social .LinkedInGradient{
+    width: 44px;
+    margin-top: -5px;
+    margin-right: -4px;
+}
+
+.social ul{
+    justify-content: right;
+    margin-top: 17%;
+}
+
+.social ul a img{
+    opacity: 1;
+    padding: 3px;
+    transition: opacity 0.5s;
+}
+
+.social ul a:hover img,
+.social ul a:active img,
+.social ul a:visited img,
+.social ul a:active:hover img{
+    opacity: 0.5;
+    transition: opacity 0.5s;
 }
