@@ -2,16 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
+
+    /* TODO - Decide your color palette and define them here*/
     --color-background: #FAF9F6;
     margin: 0;
 
     /* This height refers to the screen/window height.
-    For instance, in case of 200vh, we have scrollable window */
-    /* height: 100vh;
-
-    Removes the extra portion of the div from each side
-    display: flex;
-    font-size: 18px; */
+    For instance, in case of 200vh, we have scrollable window
+    height: 100vh; */
     justify-content: center;
     align-items: center;
     background: var(--color-background)
