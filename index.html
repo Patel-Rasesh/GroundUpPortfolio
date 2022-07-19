@@ -157,7 +157,7 @@
                         </a>
                       </div>
                       <div class="timestamp">
-                        3 days ago
+                        
                       </div>
                     </div>
                   </div>
@@ -167,33 +167,35 @@
               <li class="carousel__horse">
                 <!-- RUN TRACKER -->
                 <div class="jogging-card">
-                  <div class="card-header">
-                    <div class="card-icon">
-                      <image src="images/Highlight/run-icon.svg" class="run-icon"></image>
+                  <a href="https://www.google.com/maps/dir/Tom+Thumb,+Custer+Parkway,+Richardson,+TX/Point+North+Park,+Synergy+Park+Boulevard,+Richardson,+TX/Canyon+Creek+Country+Club,+West+Lookout+Drive,+Richardson,+TX/Tom+Thumb,+Custer+Parkway,+Richardson,+TX/@32.9933544,-96.7471527,14.96z/data=!4m36!4m35!1m5!1m1!1s0x864c18b7e96222c5:0x27cbb119c9156928!2m2!1d-96.7305525!2d32.9988139!1m10!1m1!1s0x864c18aed20863f9:0x9651b60ceef051a1!2m2!1d-96.7439324!2d32.9952203!3m4!1m2!1d-96.7438192!2d32.9901276!3s0x864c18ac7945d419:0x8e02380724490fe0!1m10!1m1!1s0x864c1eae0a6c2149:0xc0117d3a0ef1f6ad!2m2!1d-96.7305105!2d32.9909405!3m4!1m2!1d-96.7281453!2d32.9938365!3s0x864c18b60184e851:0xc57edf1d0cf6ca2e!1m5!1m1!1s0x864c18b7e96222c5:0x27cbb119c9156928!2m2!1d-96.7305525!2d32.9988139!3e0" class="jogging-card-map" target="_blank">
+                    <div class="card-header">
+                      <div class="card-icon">
+                        <image src="images/Highlight/run-icon.svg" class="run-icon"></image>
+                      </div>
+                      <div class="card-title">
+                        About last jog
+                      </div>
                     </div>
-                    <div class="card-title">
-                      About last jog
+                    <div class="card-subtitle">
+                      <div class="distance">
+                        Run: 3.03 mi
+                      </div>
+                      <div class="date">
+                        
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-subtitle">
-                    <div class="distance">
-                      Run: 3.03 mi
+                    <div class="card-component">
+                      <div class="calories">
+                        444 <br> kcal
+                      </div>
+                      <div class="duration">
+                        35:46 <br> Duration
+                      </div>
+                      <div class="speed">
+                        11' 46'' <br> Avg Speed
+                      </div>
                     </div>
-                    <div class="date">
-                      Sat 15th, 2022
-                    </div>
-                  </div>
-                  <div class="card-component">
-                    <div class="calories">
-                      444 <br> kcal
-                    </div>
-                    <div class="duration">
-                      35:46 <br> Duration
-                    </div>
-                    <div class="speed">
-                      11' 46'' <br> Avg Speed
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </li>
 
@@ -228,6 +230,9 @@
           </div>
         </div>  
       </div>
+      <div class="run-map-header" id="run-map-header">
+        Open on maps!
+      </div>
     </section>
 
     <!-- -----------------------------------------------------------------------------
@@ -241,8 +246,7 @@
         <div class="contact-info-body">
           <div class="dynamic-contact">
             <div class="dynamic-contact-message">
-              <textarea class="dynamic-contact-message" name="dynamic-contact-message" cols="43" rows="10" placeholder="Conveniently drop a text over WhatsApp?"></textarea>
-              <!-- <input type="text" placeholder="Conveniently text over WhatsApp?" class="message-text-box"> -->
+              <textarea id="message-box" class="dynamic-contact-messageBox" name="dynamic-contact-message" cols="43" rows="10" placeholder="Conveniently drop a direct message?"></textarea>
             </div>
             <div class="dynamic-contact-body">
               <div class="dynamic-contact-name">
@@ -317,12 +321,15 @@
           </div>
         </div>
       </div>
+      <div id="toast">Sent successfully!</div>
       <div class="credits">
         <p>This portfolio is built from scratch without borrowing any technical code/snnipet/reference. However, some of it is visually inspired by Lee Rob's personal brand.</p>
       </div>
     </section>
     <script src="JavaScript/Carousel-timer.js"></script>
     <script src="JavaScript/More-items.js"></script>
+    <script src="JavaScript/SendTrash.js"></script>
+    <script src="JavaScript/Highlight-card.js"></script>
     <script>
       ScrollReveal({ 
         reset: true,

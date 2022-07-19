@@ -333,20 +333,24 @@ Highlight container
     object-fit: cover;
 }
 
+.jogging-card:hover{
+    opacity: 0.7;
+}
+
 .card-header{
     display: flex;
     align-items: center;
 }
 
 .card-title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* background-color: bisque; */
     margin: 5px 0px 5px 0px;
 }
 
 .card-subtitle{
     margin: 5px 0px 5px 0px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: flex;
 }
 
@@ -362,13 +366,17 @@ Highlight container
 .card-component{
     display: flex;
     /* background-color: lightsalmon; */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     align-items: top;
     margin: 30px 0px 10px 0px;
 }
 
 .leetcode-card .problem-statement{
     width: 80%;
+    align-items: center;
+    height: 35px;
+    /* background-color: black; */
+    backdrop-filter: blur(0.5px);
 }
 
 .leetcode-card .timestamp{
@@ -377,6 +385,11 @@ Highlight container
     /* If you want to align text to the right of the screen, and when display is flex, you first need to make sure that that div is on the right most of the parent div
     Once the child on the right most edge, text-align: right will work */
     text-align: right;
+}
+
+.leetcode-card{
+    background-image: url("images/Highlight/Leetcode-heatmap.jpg");
+    background-size: cover;
 }
 
 .leetcode-card .difficulty-class{
@@ -404,6 +417,23 @@ Highlight container
 .jogging-card .speed{
     padding: 7px;
     width: 33.33%;
+}
+
+.jogging-card{
+    background-image: url('images/Highlight/run-map.jpeg');
+    background-position: 75% 75%;
+    background-size: cover;
+}
+
+.run-map-header{
+    display: none;
+}
+
+/* TODO - show run-map-header over hover */
+
+.jogging-card-map{
+    text-decoration: none;
+    color: black;
 }
 
 .jogging-card .calories{
@@ -512,14 +542,14 @@ Contact container
     margin: 15px 0px 0px 0px;
 }
 
-.dynamic-contact-message .dynamic-contact-message{
+.dynamic-contact-message .dynamic-contact-messageBox{
     width: 80%;
     text-align: left;
 }
 
-/* .dynamic-contact-message .message-text-box{
-    margin: 10px 5px 0px 5px;
-    height: 150px;
+/* .dynamic-contact-message .message-box{
+    width: 80%;
+    text-align: left;
 } */
 
 .dynamic-contact-buttons{
@@ -608,6 +638,19 @@ Contact container
 .clear:hover{
     transition: 0.3s;
     transform: scale(1.09);
+}
+
+#toast{
+    visibility: hidden;
+    /* TODO - Bring from color palette */
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 327px;
+}
+
+#toast-show{
+    visibility: visible;
 }
 
 .social ul{
