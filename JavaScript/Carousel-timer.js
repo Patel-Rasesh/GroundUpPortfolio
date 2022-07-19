@@ -34,7 +34,7 @@ nextButton.addEventListener('click', event=>{
     const nextDot = currentDot.nextElementSibling;
     // 1a. Next to the right most horse
     // if (nextHorse == null){
-    //     moveHorses(trackArray, currentHorse, horses[0]);
+    // moveHorses(trackArray, currentHorse, horses[0]);
     //     // moveDots(currentDot, dotsArray[0]);
     // }
     // else{
@@ -46,6 +46,8 @@ nextButton.addEventListener('click', event=>{
 previousButton.addEventListener('click', event => {
     const currentHorse = trackArray.querySelector('.current-horse');
     const previousHorse = currentHorse.previousElementSibling;
+    const currentDot = dotsArray.querySelector('.current-horse');
+    const previousDot = currentDot.previousElementSibling;
 
     // 2a. Previous to the left most horse
     // if (previousHorse == null){
@@ -53,11 +55,12 @@ previousButton.addEventListener('click', event => {
     // }
 
     moveHorses(trackArray, currentHorse, previousHorse);
-    const currentDot = dotsArray.querySelector('.current-horse');
-    const previousDot = currentDot.previousElementSibling;
     moveDots(currentDot, previousDot);
     
 })
+
+// Setting interval for automatic rotation
+// setInterval(nextButton.click(), 5000);
 
 // 3. Go to the respective image when clicked on any dot
 dotsArray.addEventListener('click', event=>{
@@ -74,18 +77,4 @@ dotsArray.addEventListener('click', event=>{
 
     moveHorses(trackArray, currentHorse, targetHorse);
     moveDots(currentDot, targetDot);
-
-    console.log(targetIndex);
-    if (targetIndex == 0){
-        previousButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
-    else if(targetIndex == horses.length - 1){
-        previousButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
-    }
-    else{
-        previousButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
 })

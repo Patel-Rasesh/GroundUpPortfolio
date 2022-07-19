@@ -213,7 +213,7 @@ About Photo Container
     left: 0;
     width: 95%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
     transition: 0.8s;
     position: absolute;
     object-fit: cover;
@@ -221,7 +221,6 @@ About Photo Container
 
 .caption{
     z-index: 222;
-    display: flex;
     font-size: 1.3rem;
     border: 1px solid rgba(138, 102, 66, 0.65);
     background-color: rgba(138, 102, 66, 0.65);
@@ -236,9 +235,13 @@ About Photo Container
     position: absolute;
     top: 65%;
     left: 5%;
-    /* transform: translate(4%, 100%); */
+    /* transform: translate(4%, -20%); */
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
+}
+
+.is-hidden{
+    display: none;
 }
 
 /* ----------------------------------------------------------------------------

@@ -10,6 +10,7 @@
         font-family: 'Roboto', sans-serif;
       }
     </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     
@@ -320,8 +321,16 @@
         <p>This portfolio is built from scratch without borrowing any technical code/snnipet/reference. However, some of it is visually inspired by Lee Rob's personal brand.</p>
       </div>
     </section>
-    <script src="JavaScript/Carousel.js"></script>
+    <script src="JavaScript/Carousel-timer.js"></script>
     <script src="JavaScript/More-items.js"></script>
-    
+    <script>
+      ScrollReveal({ 
+        reset: true,
+        distance: '30px',
+        duration: 500,
+        delay: 20
+       });
+      ScrollReveal().reveal('body', { origin: 'right', delay: 200 });
+    </script>
   </body>
 </html>
