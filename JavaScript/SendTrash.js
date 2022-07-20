@@ -26,6 +26,13 @@ sendButton.addEventListener("click", function(){
         messageBox.style.border = "thin solid red";
     }
     else{
+
+        // Capture those values of message and name, and store them in DB
+        var captured_name = nameBox.value;
+        var captured_message = messageBox.value;
+        console.log(captured_name);
+        console.log(captured_message);
+
         nameBox.style.border = "none";
         messageBox.style.border = "none";
         var toast = document.getElementById("toast");
