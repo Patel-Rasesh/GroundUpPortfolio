@@ -1,72 +1,98 @@
 body{
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    --radius-border : 13px;
 }
-
-.master-container{
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.container{
-    justify-content: center;
-    align-items: center;
+ 
+.card{
+    height: 200px;
     display: flex;
-    height: 200px;
+    padding: 5px;
+    border-radius: var(--radius-border);
+    background-color: orange;
+    margin: 5px;
 }
 
-.extended-container{
-    padding: 20px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+.card-words{
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: var(--radius-border);
+    background-color: yellow;
 }
 
-.project1-class,
-.project2-class,
-.project3-class,
-.project4-class,
-.project5-class,
-.project6-class{
-    padding: 20px;
+.card-picture{
+    width: 70%;
+    margin: 5px;
+    border-radius: var(--radius-border);
+    padding: 5px;
+    background-color: lightblue;
+    /* width: 800px;
+    height: 200px; */
+    position: relative;
 }
 
-.project1-button,
-.project2-button,
-.project3-button,
-.project4-button,
-.project5-button,
-.project6-button{
-    width: 170px;
+.card-picture img{
+    border-radius: var(--radius-border);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* NOTE- If we don't specify 100%, then it assumes 
+    more than 100% and appears with original size */
+    width: 100%;
     height: 100%;
-    cursor: pointer;
-    border: 2px solid rgb(0, 255, 0, 0.5);
-    background-color: offwhite;
-    border-radius: 13px;
+    overflow: hidden;
 }
 
-.project1-button:hover,
-.project2-button:hover,
-.project3-button:hover,
-.project4-button:hover,
-.project5-button:hover,
-.project6-button:hover{
-    transform: scale(1.01);
-}
-
-.more-items-class{
-    transform: translate(235px);
-    justify-content: center;
-    align-items: center;
+/* NOTE - Padding is how far content from the border of div
+and margin is how far sibling elements would be */
+.card-header{
+    font-size: 1.1rem;
     display: flex;
 }
 
-.more-items-button{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 0.6rem;
+.card-title{
+    width: 80%;
+    margin: 5px;
+    background-color: lightcoral;
 }
+
+.card-date{
+    width: 20%;
+    text-align: center;
+    margin: 5px;
+    background-color: lightpink;
+}
+
+.card-content{
+    /* align-items: center; */
+    font-size: 1.05rem;
+    margin: 5px;
+    display: flex;
+    background-color: lightgreen;
+}
+
+/* LEETCODE */
+.difficulty{
+    /* Orange implies medium difficulty */
+    width: 30px;
+    height: 15px;
+    margin: 2px;
+    background-color: orange;
+
+}
+.problem-statement{
+
+}
+
+/* RUN */
+.miles,
+.calories,
+.duration,
+.average{
+    text-align: center;
+    padding: 10px;
+}
+
+/* SPOTIFY */
