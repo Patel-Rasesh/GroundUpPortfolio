@@ -19,14 +19,11 @@ body{
     background: var(--color-background)
 }
 
-section.header{
-    border-bottom: 0.5px solid #e4e6ea;
-}
-
 .headerbar{
     max-width: 1200px;
     padding: 10px;
     box-sizing: border-box;
+    border-bottom: 0.5px solid #e4e6ea;
 }
 
 .headermenus{
@@ -210,6 +207,7 @@ Project carousel
 
 .carousel__dots{
     /* background: #1fffff; */
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -318,7 +316,7 @@ Highlight container
 
 .highlight-header h1{
     font-size: 1.6rem;
-    margin: 5px 0px 5px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 .leetcode-card,
@@ -329,7 +327,7 @@ Highlight container
     top: 0;
     left: 0;
     width: 100%;
-    height: 170px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -340,25 +338,28 @@ Highlight container
 .card-header{
     display: flex;
     align-items: center;
+    margin: 15px;
 }
 
 .card-title{
+    margin: 15px;
     font-size: 1.2rem;
     /* background-color: bisque; */
-    margin: 5px 0px 5px 0px;
 }
 
 .card-subtitle{
-    margin: 5px 0px 5px 0px;
+    margin: 15px;
     font-size: 1.1rem;
     display: flex;
 }
 
 .card-subtitle .distance{
+    margin: 15px;
     width: 50%;
 }
 
 .card-subtitle .date{
+    margin: 15px;
     width: 50%;
     text-align: right;
 }
@@ -368,7 +369,7 @@ Highlight container
     /* background-color: lightsalmon; */
     font-size: 1.1rem;
     align-items: top;
-    margin: 30px 0px 10px 0px;
+    margin: 15px;
 }
 
 .leetcode-card .problem-statement{
@@ -415,6 +416,7 @@ Highlight container
 .jogging-card .calories,
 .jogging-card .duration,
 .jogging-card .speed{
+    margin: 0px 15px 0px 15px;
     padding: 7px;
     width: 33.33%;
 }
@@ -453,7 +455,6 @@ Highlight container
     width: 40px;
     height: 40px;
     position: relative;
-    margin: 0px 10px 0px 0px;
 }
 
 .card-icon img{
@@ -469,8 +470,9 @@ Highlight container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
+    margin-top: 130px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
 }
 
@@ -494,8 +496,8 @@ Contact container
 
 .contact-info-header h1{
     font-size: 1.6rem;
-    margin: 65px 5px 5px 0px;
-    padding: 0px 0px 5px 0px;
+    margin: 85px 5px 5px 0px;
+    padding: 0px 0px 25px 0px;
     border-bottom: 0.5px solid #e4e6ea;
 }
 
