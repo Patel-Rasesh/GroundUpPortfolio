@@ -4,7 +4,13 @@ html{
 body{
 
     /* TODO - Decide your color palette and define them here*/
+    /* Light: Beige, offwhite */
+    /* Dark: Dark Grey, */
+    /* Gradient: */
     --color-background: #FAF9F6;
+    /* --font-color: dark grey over black */
+    /* --border-color: */
+    /* --hover-color: */
 
     /* This height refers to the screen/window height.
     For instance, in case of 200vh, we have scrollable window
@@ -39,6 +45,7 @@ body{
 }
 
 .menu li{
+    
     justify-content: left;
     text-align: left;
 }
@@ -46,6 +53,7 @@ body{
 .menu ul a{
     padding: 10px 10px 13px 10px;
     line-height: 1.7;
+    /* TODO - insert font-color here */
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 9px;
