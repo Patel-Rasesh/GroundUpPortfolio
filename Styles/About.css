@@ -15,18 +15,11 @@ html{
     scroll-behavior: smooth;
 }
 
-/* -------------------------------------------------------------------------------------------
-For menubar
-------------------------------------------------------------------------------------------- */
-
-section.header{
-    border-bottom: 0.5px solid #e4e6ea;
-}
-
 .headerbar{
     max-width: 1200px;
     padding: 10px;
     box-sizing: border-box;
+    border-bottom: 0.5px solid #e4e6ea;
 }
 
 .headermenus{
@@ -42,6 +35,7 @@ section.header{
 }
 
 .menu li{
+    
     justify-content: left;
     text-align: left;
 }
@@ -49,6 +43,7 @@ section.header{
 .menu ul a{
     padding: 10px 10px 13px 10px;
     line-height: 1.7;
+    /* TODO - insert font-color here */
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 9px;
@@ -63,7 +58,6 @@ section.header{
 .menu ul a:active:hover,
 .menu ul a.active{
     border: 1px solid #E8DCD5;
-    /* TODO - Declare and reuse color variable */
     background-color: #E8DCD5;
     transition: border 0.5s;
     transition: background-color 0.5s;
@@ -205,6 +199,7 @@ About Photo Container
     height: 500px;
     position: relative;
     overflow: hidden;
+    background-color: #333;
 }
  
 .about-image-class img{
@@ -248,12 +243,14 @@ About Photo Container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
+    z-index: 333;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 .credits{
+    margin-top: 50px;
     font-size: 0.8rem;
 }
 
@@ -263,7 +260,7 @@ Contact container
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
-    height: 320px;
+    /* height: 320px; */
     text-align: left;
 
     /* Header and Body are block displayed */
@@ -272,8 +269,8 @@ Contact container
 
 .contact-info-header h1{
     font-size: 1.6rem;
-    margin: 65px 5px 5px 0px;
-    padding: 0px 0px 5px 0px;
+    margin: 85px 5px 5px 0px;
+    padding: 0px 0px 25px 0px;
     border-bottom: 0.5px solid #e4e6ea;
 }
 
@@ -293,12 +290,13 @@ Contact container
 .dynamic-contact{
     text-align: left;
     font-size: 1.2rem;
-    width: 70%;
+    width: 60%;
 }
 
 .dynamic-contact-name{
     margin: 1px 5px 10px 0px;
     display: flex;
+    width: 60%;
     font-size: 1.3rem;
     font-weight: bold;
     align-items: center;
@@ -311,53 +309,60 @@ Contact container
 
 .dynamic-contact-name .name-text-box{
     margin: 10px 12px 0px 0px;
-    height: 30px;
-    width: 320px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 .dynamic-contact-message{
     width: 100%;
-    /* background-color: pink; */
     margin: 15px 0px 0px 0px;
 }
 
-.dynamic-contact-message .dynamic-contact-message{
-    width: 80%;
+.dynamic-contact-message .dynamic-contact-messageBox{
+    width: 93.5%;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
 }
 
-/* .dynamic-contact-message .message-text-box{
-    margin: 10px 5px 0px 5px;
-    height: 150px;
-} */
-
 .dynamic-contact-buttons{
-    margin: 0 0 0 7px;
+    justify-content: right;
+    /* margin: 0 0 0 7px; */
+    width: 40%;
     display: flex;
 }
+
 .dynamic-contact-buttons-send,
 .dynamic-contact-buttons-clear{
-    margin: 0px 5px 0 0;
+    margin: 0 0 0 10px;
 }
 
 .static-contact{
     text-align: right;
-    width: 30%;
+    width: 40%;
+}
+
+.contact-info-body-email,
+.contact-info-body-phone,
+.social{
+    height: 33.33%;
 }
 
 .contact-info-body-email-title,
 .contact-info-body-phone-title{
-    margin: 0px 5px 20px 0px;
+    margin: 0px 0px 20px 0px;
     font-size: 1rem;
     font-weight: bold;
-    justify-content: right;
+    /* justify-content: right; */
     display: flex;
     padding: 0;
 }
 
 .contact-info-body-email-data,
 .contact-info-body-phone-data{
-    margin: -30px 5px 0 0;
+    margin: -20px 0px 0 0;
     padding: 0;
     font-size: 1rem;
 }
@@ -374,8 +379,8 @@ Contact container
 .trash-icon-class,
 .send-icon-class{
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -392,9 +397,7 @@ Contact container
 .trash-icon-class img,
 .send-icon-class img{
     position: absolute;
-    top: -10px;
-    left: -6px;
-    right: 0px;
+    right: 8px;
     bottom: 0px;
     width: 25px;
     height: 25px;
@@ -403,14 +406,13 @@ Contact container
 
 .send,
 .clear{
-    width: 35px;
+    width: 55px;
     cursor: pointer;
-    height: 35px;
+    height: 40px;
     padding: 10px;
-    background-color: lightgray;
+    background-color: lightblue;
     border: none;
-    border-radius: 12px;
-    
+    border-radius: 18px;
 }
 
 .send:hover,
@@ -419,10 +421,25 @@ Contact container
     transform: scale(1.09);
 }
 
+#toast{
+    visibility: hidden;
+    margin-top: 20px;
+    /* TODO - Bring from color palette */
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 327px;
+}
+
+#toast-show{
+    visibility: visible;
+}
+
 .social ul{
     list-style: none;
     display: flex;
 }
+
 .social ul li img{
     width: 35px;
 }
@@ -435,7 +452,6 @@ Contact container
 
 .social ul{
     justify-content: right;
-    margin-top: 17%;
 }
 
 .social ul a img{

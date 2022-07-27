@@ -12,6 +12,9 @@ body{
     /* --border-color: */
     /* --hover-color: */
 
+    /* --icon-width: */
+    /* --icon-height: */
+
     /* This height refers to the screen/window height.
     For instance, in case of 200vh, we have scrollable window
     height: 100vh; */
@@ -77,16 +80,16 @@ body{
 /* ----------------------------------------------------------------------------
 Home container
 ---------------------------------------------------------------------------- */
-.home-container{
-    display: flex;
-}
+
 .home-container .text-details{
     display: block;
 }
+
 .home-container .name{
     font-size: 3rem;
     margin-bottom: 0;
 }
+
 .home-container .bio{
     margin-top: 0;
     /* TODO - declare this color in color pallete and call variable here */
@@ -94,6 +97,7 @@ Home container
     font-size: 1.1rem;
     font-weight: normal;
 }
+
 .home-container .mission{
     font-size: 1.3rem;
     /* TODO - declare this color in color pallete and call variable here */
@@ -101,13 +105,18 @@ Home container
     font-style: italic;
     display: flex;
 }
+
 .home-container img{
     margin-top: 20px;
     margin-left: 80px;
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
     border-radius: 100px;
     object-fit: cover;
+}
+
+.title-and-photo{
+    display: flex;
 }
 
 /* ----------------------------------------------------------------------------
@@ -239,9 +248,12 @@ Project carousel
 /* ----------------------------------------------------------------------------
 Classic projects with "more items to expand"
 ---------------------------------------------------------------------------- */
+
 .master-container{
     justify-content: center;
-    /* align-items: center; */
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .container{
@@ -254,7 +266,6 @@ Classic projects with "more items to expand"
 .extended-container{
     display: none;
     justify-content: center;
-    /* TODO - aligning left is not working  */
     align-items: left; 
     width: 100%;
 }
@@ -316,9 +327,9 @@ Highlight container
 ---------------------------------------------------------------------------- */
 .highlight{
     width: 100%;
-    height: 225px;
+    /* height: 225px; */
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     padding: 5px;
 }
 
@@ -478,9 +489,8 @@ Highlight container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
-    margin-top: 130px;
     width: 100%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -495,7 +505,7 @@ Contact container
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
-    height: 320px;
+    /* height: 320px; */
     text-align: left;
 
     /* Header and Body are block displayed */
@@ -525,12 +535,13 @@ Contact container
 .dynamic-contact{
     text-align: left;
     font-size: 1.2rem;
-    width: 70%;
+    width: 60%;
 }
 
 .dynamic-contact-name{
     margin: 1px 5px 10px 0px;
     display: flex;
+    width: 60%;
     font-size: 1.3rem;
     font-weight: bold;
     align-items: center;
@@ -543,20 +554,18 @@ Contact container
 
 .dynamic-contact-name .name-text-box{
     margin: 10px 12px 0px 0px;
-    width: 320px;
+    width: 100%;
     padding: 10px;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
 }
 
 .dynamic-contact-message{
     width: 100%;
     margin: 15px 0px 0px 0px;
-    font-family: 'Roboto' sans-serif;
 }
 
 .dynamic-contact-message .dynamic-contact-messageBox{
-    width: 80%;
+    width: 93.5%;
     padding: 15px;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -564,32 +573,41 @@ Contact container
 }
 
 .dynamic-contact-buttons{
-    margin: 0 0 0 7px;
+    justify-content: right;
+    /* margin: 0 0 0 7px; */
+    width: 40%;
     display: flex;
 }
+
 .dynamic-contact-buttons-send,
 .dynamic-contact-buttons-clear{
-    margin: 0px 5px 0 0;
+    margin: 0 0 0 10px;
 }
 
 .static-contact{
     text-align: right;
-    width: 30%;
+    width: 40%;
+}
+
+.contact-info-body-email,
+.contact-info-body-phone,
+.social{
+    height: 33.33%;
 }
 
 .contact-info-body-email-title,
 .contact-info-body-phone-title{
-    margin: 0px 5px 20px 0px;
+    margin: 0px 0px 20px 0px;
     font-size: 1rem;
     font-weight: bold;
-    justify-content: right;
+    /* justify-content: right; */
     display: flex;
     padding: 0;
 }
 
 .contact-info-body-email-data,
 .contact-info-body-phone-data{
-    margin: -30px 5px 0 0;
+    margin: -20px 0px 0 0;
     padding: 0;
     font-size: 1rem;
 }
@@ -606,8 +624,8 @@ Contact container
 .trash-icon-class,
 .send-icon-class{
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -624,9 +642,7 @@ Contact container
 .trash-icon-class img,
 .send-icon-class img{
     position: absolute;
-    top: -10px;
-    left: -6px;
-    right: 0px;
+    right: 8px;
     bottom: 0px;
     width: 25px;
     height: 25px;
@@ -635,14 +651,13 @@ Contact container
 
 .send,
 .clear{
-    width: 35px;
+    width: 55px;
     cursor: pointer;
-    height: 35px;
+    height: 40px;
     padding: 10px;
-    background-color: lightgray;
+    background-color: lightblue;
     border: none;
-    border-radius: 12px;
-    
+    border-radius: 18px;
 }
 
 .send:hover,
@@ -669,6 +684,7 @@ Contact container
     list-style: none;
     display: flex;
 }
+
 .social ul li img{
     width: 35px;
 }
@@ -681,7 +697,6 @@ Contact container
 
 .social ul{
     justify-content: right;
-    margin-top: 17%;
 }
 
 .social ul a img{

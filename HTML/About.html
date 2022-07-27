@@ -30,8 +30,7 @@
                 <a href="../index.html">Highlights</a>
               </li>
               <li>
-                <!-- TODO - About to About link is broken -->
-                <a href="." target="_blank" class="about-link">About</a>
+                <a href="../index.html" class="about-link">About</a>
               </li>
               <li>
                 <a href="#contact-info">Contact</a>
@@ -39,6 +38,7 @@
             </ul>
           </div>
         </div>
+        <!-- Temporarily insert GitHub Symbol and later on insert a toggle switch for theme -->
       </div>
     </section>
 
@@ -138,8 +138,7 @@
         <div class="contact-info-body">
           <div class="dynamic-contact">
             <div class="dynamic-contact-message">
-              <textarea name="dynamic-contact-message" cols="43" rows="10" placeholder="Conveniently drop a text over WhatsApp?"></textarea>
-              <!-- <input type="text" placeholder="Conveniently text over WhatsApp?" class="message-text-box"> -->
+              <textarea id="message-box" class="dynamic-contact-messageBox" name="dynamic-contact-message" cols="43" rows="10" placeholder="Conveniently drop a direct message?"></textarea>
             </div>
             <div class="dynamic-contact-body">
               <div class="dynamic-contact-name">
@@ -189,25 +188,32 @@
             <div class="social">
               <ul>
                 <li>
-                  <a href="https://www.linkedin.com/in/rasesh-patel97/" target="_blank">
-                    <img src="../images/LinkedinGradient.svg" class="LinkedInGradient"/>
-                  </a>
+                  <div class="linkedin-class">
+                    <a href="https://www.linkedin.com/in/rasesh-patel97/" target="_blank">
+                      <img src="../images/LinkedinGradient.svg" class="LinkedInGradient"/>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="mailto:raseshpatel9977@gmail.com">
-                    <img src="../images/mail.svg" />
-                  </a>
+                  <div class="email-class">
+                    <a href="mailto:raseshpatel9977@gmail.com">
+                      <img src="../images/mail.svg" />
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/_rasesh/" target="_blank">
-                    <img src="../images/instagram.svg" />
-                  </a> 
+                  <div class="instagram-class">
+                    <a href="https://www.instagram.com/_rasesh/" target="_blank">
+                      <img src="../images/instagram.svg" />
+                    </a> 
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      <div id="toast">Sent successfully!</div>
       <div class="credits">
         <p>This portfolio is built from scratch without borrowing any technical code/snnipet/reference. However, some of it is visually inspired by Lee Rob's personal brand.</p>
       </div>
