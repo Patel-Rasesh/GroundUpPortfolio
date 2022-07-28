@@ -68,17 +68,11 @@ html{
 Carousel
 ------------------------------------------------------------------------------------------- */
 /* TODO - Left component can be parent */
-/* .carousel__stage .about-button-expanded img{
-    transition: ease-in-out;
-    margin: 0 auto;
-    object-fit: contain;
-    border-radius: 5px;
-} */
 
 .carousel{
     position: relative;
     transition: 0.7s;
-    height: 500px;
+    height: 650px;
     width: 100%;
     margin: 0 auto;
 }
@@ -86,14 +80,14 @@ Carousel
 .carousel__stage{
     position: relative;
     background: -var(--color-background);
-    height: 200%;
+    height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
 .carousel__track{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
     list-style: none;
     position: relative;
     height: 100%;
@@ -124,29 +118,31 @@ Carousel
 }
 
 .carousel__button .LeftArrow {
-    width: 20px;
-    height: 20px;
-    opacity: 0.3;
+    width: 40px;
+    height: 40px;
+    opacity: 0.1;
 }
 
 .carousel__button .RightArrow {
-    width: 20px;
-    height: 20px;
-    opacity: 0.3;   
+    width: 40px;
+    height: 40px;
+    opacity: 0.1;   
 }
 
 .carousel__button--next{
+    top: 50%;
     right: -60px;
 }
 
 .carousel__button--previous{
+    top: 50%;
     left: -60px;
 }
 
 .carousel__dots{
     display: flex;
     justify-content: center;
-    padding: 5px 0 0 0;
+    padding: 0px;
     margin: 0 auto;
 }
 
@@ -174,6 +170,10 @@ About Photo Container
     width: 100%;
 }
 
+.about-container{
+    /* margin-bottom: 130px; */
+}
+
 .about-title{
     transition: ease-in-out;
     border: none;
@@ -182,6 +182,7 @@ About Photo Container
     background-color: var(--color-background);
     color: black;
     font-style: italic;
+    margin: 0px 0px 40px 0px;
 }
 
 .about-header{
@@ -191,29 +192,68 @@ About Photo Container
 
 .about-expanded{
     transition: 1s ease-out;
-    display: flex;
 }
 
-.about-image-class{
-    width:  1024px;
+.water-button,
+.food-button,
+.brain-button,
+.sweat-button{
+    transition: 0.5s;
+    width: 100%;
     height: 500px;
-    position: relative;
-    overflow: hidden;
-    background-color: #333;
-}
- 
-.about-image-class img{
-    z-index: 111;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 100%;
-    border-radius: 8px;
-    transition: 0.8s;
-    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-size: cover;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.water-button:hover,
+.food-button:hover,
+.sweat-button:hover,
+.brain-button:hover{
+    transform: scale(1.02);
+}
+
+.water-button{
+    background-image: url("../images/About/Water-1.jpeg");
+}
+
+.water-caption,
+.food-caption,
+.sweat-caption,
+.brain-caption{
+    /* transition: 0.09s; */
+    visibility: hidden;
+    width: 88%;
+    height: 88%;
+    border: 2px solid grey;
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 13px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.food-button{
+    background-image: url("../images/About/Food-1.jpeg");
+}
+
+.sweat-button{
+    background-image: url("../images/About/Sweat-1.jpeg");
+}
+
+.brain-button{
+    background-image: url("../images/About/Brain-1.jpeg");
+}
+/*  
 .caption{
     z-index: 222;
     font-size: 1.3rem;
@@ -230,10 +270,10 @@ About Photo Container
     position: absolute;
     top: 65%;
     left: 5%;
-    /* transform: translate(4%, -20%); */
-    font-family: 'Roboto', sans-serif;
+    transform: translate(4%, -20%);
+    
     border-radius: 10px;
-}
+} */
 
 .is-hidden{
     display: none;
@@ -243,7 +283,7 @@ About Photo Container
 Contact container
 ---------------------------------------------------------------------------- */
 .contact-info-section{
-    z-index: 333;
+    /* z-index: 333; */
     width: 100%;
     margin: 0 auto;
     text-align: center;

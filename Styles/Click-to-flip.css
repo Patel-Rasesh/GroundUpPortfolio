@@ -1,0 +1,18 @@
+.foreground{
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/About/Brain-1.jpeg");
+    background-size: cover;
+}
+
+.caption{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border: 2px solid olivedrab;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

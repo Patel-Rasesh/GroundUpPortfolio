@@ -26,37 +26,48 @@ const moveDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-horse');
     targetDot.classList.add('current-horse');
 }
+
+previousButton.classList.add('is-hidden');
+
 // 1. Click Next for image on the right
 nextButton.addEventListener('click', event=>{
     const currentHorse = trackArray.querySelector('.current-horse');
     const nextHorse = currentHorse.nextElementSibling;
     const currentDot = dotsArray.querySelector('.current-horse');
     const nextDot = currentDot.nextElementSibling;
-    // 1a. Next to the right most horse
-    // if (nextHorse == null){
-    //     moveHorses(trackArray, currentHorse, horses[0]);
-    //     // moveDots(currentDot, dotsArray[0]);
-    // }
-    // else{
     moveHorses(trackArray, currentHorse, nextHorse);
     moveDots(currentDot, nextDot);
-    //}
+
+    const targetIndex = horses.findIndex(sampleHorse => sampleHorse === nextHorse);
+    // const targetIndex = horses.findIndex(currentHorse);
+    console.log(targetIndex);
+    if(targetIndex == horses.length-1){
+        nextButton.classList.add('is-hidden');
+    }
+    else{
+        previousButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    }
 })
+
 // 2. Click Previous for image on the left
 previousButton.addEventListener('click', event => {
     const currentHorse = trackArray.querySelector('.current-horse');
     const previousHorse = currentHorse.previousElementSibling;
-
-    // 2a. Previous to the left most horse
-    // if (previousHorse == null){
-    //     moveHorses(trackArray, currentHorse, horses[]);
-    // }
-
     moveHorses(trackArray, currentHorse, previousHorse);
     const currentDot = dotsArray.querySelector('.current-horse');
     const previousDot = currentDot.previousElementSibling;
     moveDots(currentDot, previousDot);
-    
+
+    const targetIndex = horses.findIndex(sampleHorse => sampleHorse === previousHorse);
+    console.log(targetIndex);
+    if(targetIndex == 0){
+        previousButton.classList.add('is-hidden');
+    }
+    else{
+        nextButton.classList.remove('is-hidden');
+        previousButton.classList.remove('is-hidden');
+    }
 })
 
 // 3. Go to the respective image when clicked on any dot
