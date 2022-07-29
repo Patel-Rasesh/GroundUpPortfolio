@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Projects : Set The Track </title>
+    <title> Projects : Social Media </title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Styles/Projects/Twitter.css">
   </head>
@@ -68,32 +68,70 @@
     <div class="table-of-content">
         <h1>Table of Content</h1>
         <ol>
-            <li>
-                <a href="#1">Underlying Concepts</a>
-                <!-- Twitter Rest API -->
-                <!-- OAuth (What is this for again?) Login for Twitter -->
-                <!-- Pull to refresh -->
-            </li>
-            <li>
-                <a href="#2">Working Prototype</a>
-            </li>
+          <li>
+            <a href="#1">User Stories</a>
+          </li>  
+          <li>
+              <a href="#2">Underlying Concepts</a>
+          </li>
+          <li>
+              <a href="#3">Working Prototype</a>
+          </li>
         </ol>
     </div>
 
-    <div class="underlying-concepts" id="1">
+    <div class="user-stories" id="1">
+      <p>If I were to replicate Twitter App's UI, I might require a couple of more weeks than the number of days I assigned for this project. But since the goal of this project was to understand the major API calls and Android outlook of them, my efforts were only to cover the following - 
+      </p>
+      
+      <ul>
+        <li>
+          A user should be able to login (exiting account) to thier Twitter account.
+        </li>
+        <li>
+          When a user logs in, he/she should be able to see the updated feed of their account for that timestamp.
+        </li>
+        <li>
+          A user should be able to tweet and it should reflect in their feed.  
+        </li>
+        <li>
+          Implement "pull-to-refresh" for the feed.
+        </li>
+      </ul>
+    </div>
+    <div class="underlying-concepts" id="2">
         <h1>(Android) App Development</h1>
+        <h2>Twitter REST API</h2>
+        <p>
+          Twitter provides a developer console from where you can create a new project and utilize their limited service offerings. For instance, they allow you to ping (GET request) 500k times for the duration of 15 days, and it gets reset after that. This limited access ensures the reliable and scalable API service that developers can rely on.
+        </p>
+        <image class="twitter-dev-console" src="../../images/Projects/Twitter-DevConsole.png"></image>
+        <div class="poster--caption">
+          <p>Image credit : Twitter Developer Portal</p>
+        </div>
         
-        Although the task-at-hand is easy to understand, this simplicity ensues number of possible approaches. And if the question is not well understood, that might lead to fundamental changes in the solution and consequently to additional time and effort. Let us, consider the following To Dos - 
-        <ul>
-            <li>
-                The lane can be straight or curved, and white, yellow, or red.
-            </li>
-            <li>
-                The broken lane lines in the same trajectory should be detected as one line.
-            </li>
-        </ul>
-        An exemplary sample image, inclusive of above challenges, would be this - 
-        <image src="../../images/Projects/LaneDetection-bosslevel.jpeg" class="lane-bosslevel"></image>
+        <!-- OAuth (What is this for again?) Login for Twitter -->
+        <h2>OAuth 2.0 Standard for Login</h2>
+        <p>
+          I used this as a authorization framework. Once I have logged into my Twitter developer console, it provides me a security token which I can use in my App (a project in Android Studio) to have API requests authorized.
+        </p>
+        <image class="twitter-oauth-key" src="../../images/Projects/Twitter-OAuth-key.png"></image>
+        <div class="poster--caption">
+          <p>APIKey.properties file from Android Studio</p>
+        </div>
+        
+        <!-- Pull to refresh -->
+        <h2>Pull-to-refresh functionality</h2>
+        <p>
+          There are certain view groups I have used in this Android project, and a Recyclerview with SwipeRefreshLayout is one of them. I am attaching the guide I used to achieve this functionality <a href="https://guides.codepath.com/android/implementing-pull-to-refresh-guide">here</a>, but in simpler words, SwipeRefreshLayout is a class Android offers to achieve "pull-to-refresh" UX concept. And RecyclerView is used when you are going to 'recycle' the use of a view (xml), which you already created, for a list of other items.
+        </p>
+    </div>
+
+    <div class="working-prototype" id="3">
+      <h1>Walkthrough GIF</h1>
+      <div class="working-prototype gif">
+        <image src="../../images/Projects/Twitter-workingGIF.gif"></image>
+      </div>
     </div>
 
     <!-- -----------------------------------------------------------------------------

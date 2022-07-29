@@ -156,7 +156,10 @@ class - header
 
 /* INSERT THE BODY OF THE PROJECT HERE */
 .abstract,
-.table-of-content{
+.table-of-content,
+.user-stories,
+.underlying-concepts,
+.working-prototype{
     /* TODO - Define and reuse font-color */
     color: #464E51;
     line-height: 1.6;
@@ -172,7 +175,9 @@ class - header
 class - table-of-content
 ------------------------------------------------------------------------------------------- */
 
-.table-of-content h1{
+.table-of-content h1,
+.underlying-concepts h1,
+.working-prototype h1{
     color: black;
     font-size: 1.7rem;
 }
@@ -185,6 +190,17 @@ class - table-of-content
 
 .table-of-content li:hover{
     transform: scale(1.008);
+}
+
+.working-prototype.gif{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.working-prototype.gif img{
+    width: 300px;
+
 }
 
 /* ----------------------------------------------------------------------------
