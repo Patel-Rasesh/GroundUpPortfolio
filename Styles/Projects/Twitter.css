@@ -1,7 +1,6 @@
 /* -------------------------------------------------------------------------------------------
 For entire body
 ------------------------------------------------------------------------------------------- */
-
 body{
     --color-background: #FAF9F6;
     /* display: inline-block; */
@@ -155,93 +154,8 @@ class - header
     /* margin-left: 56%; */
 }
 
-/* -------------------------------------------------------------------------------------------
-class - abstract
-------------------------------------------------------------------------------------------- */
-.abstract,
-.table-of-content,
-.setting-the-perimeter,
-.initial-thoughts,
-.prefered-pipeline{
-    /* TODO - Define and reuse font-color */
-    color: #464E51;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-}
-.abstract img,
-.table-of-content img,
-.setting-the-perimeter img,
-.initial-thoughts img,
-.prefered-pipeline img{
-    margin: 15px 0px 15px 0px;
-}
+/* INSERT THE BODY OF THE PROJECT HERE */
 
-/* -------------------------------------------------------------------------------------------
-class - table-of-content
-------------------------------------------------------------------------------------------- */
-
-.table-of-content h1{
-    color: black;
-    font-size: 1.7rem;
-}
-.table-of-content li{
-    line-height: 1.6;
-    padding: 6px 6px 6px 6px;
-    transition: transform .2s;
-    border-bottom: 0.5px solid rgba(70, 78, 81, 0.15);
-}
-
-.table-of-content li:hover{
-    transform: scale(1.008);
-}
-
-/* -------------------------------------------------------------------------------------------
-class - setting-the-perimeter
-------------------------------------------------------------------------------------------- */
-
-.setting-the-perimeter{
-    text-align: left;
-    line-height: 1.6;
-}
-.setting-the-perimeter h1{
-    color: black;
-    font-size: 1.7rem;
-}
-.setting-the-perimeter p{
-    line-height: 1.6;
-    font-style: italic;
-    background-color: white;
-    border: 2px solid white;
-    text-align: center;
-}
-
-/* -------------------------------------------------------------------------------------------
-class - initial-thoughts
-------------------------------------------------------------------------------------------- */
-.initial-thoughts h1{
-    color: black;
-    font-size: 1.7rem;
-}
-
-.initial-thoughts .initial-questions{
-    color: black;
-    font-weight: bold;
-}
-/* -------------------------------------------------------------------------------------------
-class - prefered-pipeline
-------------------------------------------------------------------------------------------- */
-.prefered-pipeline h1{
-    color: black;
-    font-size: 1.7rem;
-}
-
-/* -------------------------------------------------------------------------------------------
-class - conclusions
-------------------------------------------------------------------------------------------- */
-.conclusions h1{
-    color: black;
-    font-size: 1.7rem;
-}
 
 /* ----------------------------------------------------------------------------
 Contact container

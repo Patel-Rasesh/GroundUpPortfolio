@@ -317,18 +317,26 @@ Classic projects with "more items to expand"
     padding: 7px;
     width: 175px;
     height: 190px;
-    cursor: pointer;
-    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     background-color: transparent;
     border-width: 3px;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.project1-button,
+.project2-button{
+    cursor: pointer;
+}
+
+/* TODO - To be drafted projects */
+.project3-button,
+.project4-button,
+.project5-button,
+.project6-button{
+    opacity: 0.6;
 }
 
 .project1-button:hover,
-.project2-button:hover,
-.project3-button:hover,
-.project4-button:hover,
-.project5-button:hover,
-.project6-button:hover{
+.project2-button:hover{
     transition: 0.1s;
     transform: scale(1.02);
 }
