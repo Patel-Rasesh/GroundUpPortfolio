@@ -155,7 +155,37 @@ class - header
 }
 
 /* INSERT THE BODY OF THE PROJECT HERE */
+.abstract,
+.table-of-content{
+    /* TODO - Define and reuse font-color */
+    color: #464E51;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
 
+.abstract img,
+.table-of-content img{
+    margin: 15px 0px 15px 0px;
+}
+
+/* -------------------------------------------------------------------------------------------
+class - table-of-content
+------------------------------------------------------------------------------------------- */
+
+.table-of-content h1{
+    color: black;
+    font-size: 1.7rem;
+}
+.table-of-content li{
+    line-height: 1.6;
+    padding: 6px 6px 6px 6px;
+    transition: transform .2s;
+    border-bottom: 0.5px solid rgba(70, 78, 81, 0.15);
+}
+
+.table-of-content li:hover{
+    transform: scale(1.008);
+}
 
 /* ----------------------------------------------------------------------------
 Contact container
