@@ -1,7 +1,7 @@
 // TODO - Link this with Leetcode API
-let submissionDate = new Date("08/23/2022");
+let submissionDate = new Date("09/12/2022");
 // TODO - Link this with Watch API
-let jogginDate = new Date("08/21/2022");
+let jogginDate = new Date("09/25/2022");
 
 let today = new Date();
 const dayFraction = (1000*60*60*24);
